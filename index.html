@@ -460,7 +460,7 @@
                 <p class="text-[16px] text-white not-italic whitespace-nowrap m-0">Łatwe usuwanie kamienia </p>
                 <p class="text-[16px] text-white not-italic whitespace-nowrap m-0">z silikonowych dysz</p>
               </div>
-              <div class="absolute" style="left:416.7px; top:1501px; width:193.8px; height:390px;">
+              <div class="absolute" style="left:436.1px; top:1501px; width:155px; height:310px;">
                 <img alt="Słuchawka GROHE" class="absolute block inset-0 max-w-none size-full object-contain" src="imgSluchawka.png" />
               </div>
             </div>
@@ -713,14 +713,7 @@ function setShowerMode(mode){
   document.getElementById('mode-hand').classList.toggle('hidden', !isHand);
   document.getElementById('label-rain').style.color = isHand ? '#6c7681' : '#ffffff';
   document.getElementById('label-hand').style.color = isHand ? '#ffffff' : '#6c7681';
-  var yShift = isHand ? 86 : 0;
-  document.getElementById('toggle-knob').style.transform = 'translateY(' + yShift + 'px) ' + (isHand ? 'translateX(16px)' : 'translateX(0)');
-  var shiftables = document.querySelectorAll('.toggle-shiftable');
-  for (var i = 0; i < shiftables.length; i++){
-    if (shiftables[i].id !== 'toggle-knob'){
-      shiftables[i].style.transform = 'translateY(' + yShift + 'px)';
-    }
-  }
+  document.getElementById('toggle-knob').style.transform = isHand ? 'translateX(16px)' : 'translateX(0)';
 }
 </script>
 </body>
