@@ -39,23 +39,32 @@
           <div class="absolute inset-[54.16%_9.6%_1.17%_9.6%]" data-node-id="3:160">
             <img alt="" class="absolute block inset-0 max-w-none size-full" src="imgRectangle234.svg" />
           </div>
-          <div class="absolute contents inset-[10.54%_20.6%_88.83%_59.5%]" data-node-id="3:161">
-            <div class="absolute inset-[10.54%_20.6%_88.83%_59.5%]" data-node-id="3:162"></div>
+          <div class="absolute contents inset-[10.54%_20.6%_88.83%_59.5%] cursor-pointer" data-node-id="3:161" onclick="showPanelState('pressure')">
+            <div id="pillBg-pressure" class="absolute inset-[10.54%_20.6%_88.83%_59.5%] rounded-md transition-colors" data-node-id="3:162"></div>
             <p class="[word-break:break-word] absolute inset-[10.69%_23.9%_89.06%_62.4%] leading-[normal] not-italic text-[15px] text-white whitespace-nowrap" data-node-id="3:163">
               Ustawienie ciśnienia
             </p>
           </div>
-          <div class="absolute contents inset-[10.54%_41.5%_88.83%_41.9%]" data-node-id="3:164">
-            <div class="absolute inset-[10.54%_41.5%_88.83%_41.9%]" data-node-id="3:165"></div>
+          <div class="absolute contents inset-[10.54%_41.5%_88.83%_41.9%] cursor-pointer" data-node-id="3:164" onclick="showPanelState('stream')">
+            <div id="pillBg-stream" class="absolute inset-[10.54%_41.5%_88.83%_41.9%] rounded-md transition-colors" data-node-id="3:165"></div>
             <p class="[word-break:break-word] absolute inset-[10.69%_43.9%_89.04%_43.6%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:166">
               Wybór strumienia
             </p>
           </div>
-          <div class="absolute contents inset-[10.54%_59.1%_88.83%_20.6%]" data-node-id="3:167">
-            <div class="absolute inset-[10.54%_59.1%_88.83%_20.6%]" data-node-id="3:168"></div>
+          <div class="absolute contents inset-[10.54%_59.1%_88.83%_20.6%] cursor-pointer" data-node-id="3:167" onclick="showPanelState('temp')">
+            <div id="pillBg-temp" class="absolute inset-[10.54%_59.1%_88.83%_20.6%] rounded-md transition-colors" data-node-id="3:168"></div>
             <p class="[word-break:break-word] absolute inset-[10.69%_61.4%_89.04%_22.4%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:169">
               Regulacja temperatury
             </p>
+          </div>
+
+          <div class="absolute inset-[13%_25%_71.5%_25%]" data-node-id="interactive-panel">
+            <p id="caption-temp" class="panel-caption absolute left-0 right-0 top-0 text-center text-white text-[16px] leading-snug">Przekręć, by ustawić<br>idealną temperaturę wody.</p>
+            <p id="caption-stream" class="panel-caption absolute left-0 right-0 top-0 text-center text-white text-[16px] leading-snug hidden">Wciśnij, by uruchomić<br>wybrany strumień.</p>
+            <p id="caption-pressure" class="panel-caption absolute left-0 right-0 top-0 text-center text-white text-[16px] leading-snug hidden">Przekręć, by dopasować<br>natężenie przepływu.</p>
+            <img id="panel-temp" src="imgStateTemp.png" class="panel-image absolute left-1/2 -translate-x-1/2 top-[70px] w-[520px]" alt="Regulacja temperatury">
+            <img id="panel-stream" src="imgStateStream.png" class="panel-image absolute left-1/2 -translate-x-1/2 top-[70px] w-[520px] hidden" alt="Wybór strumienia">
+            <img id="panel-pressure" src="imgStatePressure.png" class="panel-image absolute left-1/2 -translate-x-1/2 top-[70px] w-[520px] hidden" alt="Ustawienie ciśnienia">
           </div>
           <p class="[word-break:break-word] absolute inset-[37.37%_33.21%_62.29%_33.29%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:170">
             DETALE, KTÓRE MAJĄ ZNACZENIE
@@ -616,6 +625,15 @@ function resizeStage(){
 window.addEventListener('resize', resizeStage);
 window.addEventListener('load', resizeStage);
 resizeStage();
+
+function showPanelState(state){
+  ['temp','stream','pressure'].forEach(function(s){
+    document.getElementById('panel-'+s).classList.toggle('hidden', s !== state);
+    document.getElementById('caption-'+s).classList.toggle('hidden', s !== state);
+    document.getElementById('pillBg-'+s).style.backgroundColor = (s === state) ? 'rgba(255,255,255,0.12)' : 'transparent';
+  });
+}
+showPanelState('temp');
 </script>
 </body>
 </html>
