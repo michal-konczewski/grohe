@@ -10,6 +10,8 @@
   #stage, #stage * { font-family: Helvetica, Arial, sans-serif !important; }
   #stageOuter { width:100%; position:relative; overflow:hidden; background:#ffffff; display:block; }
   #stage { width:1000px; height:6653px; position:absolute; top:0; left:50%; transform-origin: top left; background:#ffffff; }
+  [data-interactive]:focus-visible { outline:2px solid #4ABFF1; outline-offset:2px; border-radius:4px; }
+  .hover-lift:hover { transform:scale(1.08); }
 </style>
 </head>
 <body>
@@ -40,20 +42,20 @@
             <img alt="" class="absolute block inset-0 max-w-none size-full" src="imgRectangle234.svg" />
           </div>
           <div class="absolute contents inset-[10.54%_20.6%_88.83%_59.5%] cursor-pointer" data-node-id="3:161" onclick="showPanelState('pressure')">
-            <div id="pillBg-pressure" class="absolute inset-[10.54%_20.6%_88.83%_59.5%] rounded-md transition-colors" data-node-id="3:162"></div>
-            <p class="[word-break:break-word] absolute inset-[10.69%_23.9%_89.06%_62.4%] leading-[normal] not-italic text-[15px] text-white whitespace-nowrap" data-node-id="3:163">
+            <div id="pillBg-pressure" class="absolute inset-[10.54%_20.6%_88.83%_59.5%] rounded-md transition-colors" data-node-id="3:162" data-interactive tabindex="0" role="button" aria-label="Ustawienie ciśnienia" onmouseenter="hoverPill('pressure',true)" onmouseleave="hoverPill('pressure',false)" onclick="showPanelState('pressure')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPanelState('pressure');}"></div>
+            <p class="[word-break:break-word] absolute inset-[10.69%_23.9%_89.06%_62.4%] leading-[normal] not-italic text-[15px] text-white whitespace-nowrap" data-node-id="3:163" onmouseenter="hoverPill('pressure',true)" onmouseleave="hoverPill('pressure',false)">
               Ustawienie ciśnienia
             </p>
           </div>
           <div class="absolute contents inset-[10.54%_41.5%_88.83%_41.9%] cursor-pointer" data-node-id="3:164" onclick="showPanelState('stream')">
-            <div id="pillBg-stream" class="absolute inset-[10.54%_41.5%_88.83%_41.9%] rounded-md transition-colors" data-node-id="3:165"></div>
-            <p class="[word-break:break-word] absolute inset-[10.69%_43.9%_89.04%_43.6%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:166">
+            <div id="pillBg-stream" class="absolute inset-[10.54%_41.5%_88.83%_41.9%] rounded-md transition-colors" data-node-id="3:165" data-interactive tabindex="0" role="button" aria-label="Wybór strumienia" onmouseenter="hoverPill('stream',true)" onmouseleave="hoverPill('stream',false)" onclick="showPanelState('stream')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPanelState('stream');}"></div>
+            <p class="[word-break:break-word] absolute inset-[10.69%_43.9%_89.04%_43.6%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:166" onmouseenter="hoverPill('stream',true)" onmouseleave="hoverPill('stream',false)">
               Wybór strumienia
             </p>
           </div>
           <div class="absolute contents inset-[10.54%_59.1%_88.83%_20.6%] cursor-pointer" data-node-id="3:167" onclick="showPanelState('temp')">
-            <div id="pillBg-temp" class="absolute inset-[10.54%_59.1%_88.83%_20.6%] rounded-md transition-colors" data-node-id="3:168"></div>
-            <p class="[word-break:break-word] absolute inset-[10.69%_61.4%_89.04%_22.4%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:169">
+            <div id="pillBg-temp" class="absolute inset-[10.54%_59.1%_88.83%_20.6%] rounded-md transition-colors" data-node-id="3:168" data-interactive tabindex="0" role="button" aria-label="Regulacja temperatury" onmouseenter="hoverPill('temp',true)" onmouseleave="hoverPill('temp',false)" onclick="showPanelState('temp')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPanelState('temp');}"></div>
+            <p class="[word-break:break-word] absolute inset-[10.69%_61.4%_89.04%_22.4%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:169" onmouseenter="hoverPill('temp',true)" onmouseleave="hoverPill('temp',false)">
               Regulacja temperatury
             </p>
           </div>
@@ -82,7 +84,7 @@
           </div>
           <div id="detail-item-5" class="absolute contents inset-[44.45%_22%_53.33%_17.9%] cursor-pointer transition-opacity duration-200" onclick="highlightDetail(5)" data-node-id="3:177">
             <div class="absolute contents inset-[46.19%_22%_53.33%_74.8%]" data-node-id="3:178">
-              <div id="detail-badge-5" class="absolute inset-[46.19%_22%_53.33%_74.8%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:179"></div>
+              <div id="detail-badge-5" class="hover-lift absolute inset-[46.19%_22%_53.33%_74.8%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:179" data-interactive tabindex="0" role="button" aria-label="Nieskręcający się wąż" onclick="highlightDetail(5)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(5);}"></div>
               <p class="[word-break:break-word] absolute inset-[46.23%_22.96%_53.42%_75.84%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:180">
                 5
               </p>
@@ -109,7 +111,7 @@
           </div>
           <div id="detail-item-4" class="absolute contents inset-[42.97%_36.7%_54.83%_17.9%] cursor-pointer transition-opacity duration-200" onclick="highlightDetail(4)" data-node-id="3:189">
             <div class="absolute contents inset-[44.69%_36.7%_54.83%_60.1%]" data-node-id="3:190">
-              <div id="detail-badge-4" class="absolute inset-[44.69%_36.7%_54.83%_60.1%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:191"></div>
+              <div id="detail-badge-4" class="hover-lift absolute inset-[44.69%_36.7%_54.83%_60.1%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:191" data-interactive tabindex="0" role="button" aria-label="Radełkowane pokrętła" onclick="highlightDetail(4)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(4);}"></div>
               <p class="[word-break:break-word] absolute inset-[44.73%_37.66%_54.92%_61.14%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:192">
                 4
               </p>
@@ -135,7 +137,7 @@
           </div>
           <div id="detail-item-3" class="absolute contents inset-[41.5%_36.7%_57.42%_17.9%] cursor-pointer transition-opacity duration-200" onclick="highlightDetail(3)" data-node-id="3:200">
             <div class="absolute contents inset-[41.91%_36.7%_57.61%_60.1%]" data-node-id="3:201">
-              <div id="detail-badge-3" class="absolute inset-[41.91%_36.7%_57.61%_60.1%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:202"></div>
+              <div id="detail-badge-3" class="hover-lift absolute inset-[41.91%_36.7%_57.61%_60.1%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:202" data-interactive tabindex="0" role="button" aria-label="Regulowany chwyt" onclick="highlightDetail(3)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(3);}"></div>
               <p class="[word-break:break-word] absolute inset-[41.95%_37.66%_57.7%_61.14%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:203">
                 3
               </p>
@@ -173,7 +175,7 @@
               </p>
             </div>
             <div class="absolute contents inset-[38.79%_21.2%_60.72%_75.6%]" data-node-id="3:216">
-              <div id="detail-badge-1" class="absolute inset-[38.79%_21.2%_60.72%_75.6%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:217"></div>
+              <div id="detail-badge-1" class="hover-lift absolute inset-[38.79%_21.2%_60.72%_75.6%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:217" data-interactive tabindex="0" role="button" aria-label="Obfity strumień" onclick="highlightDetail(1)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(1);}"></div>
               <p class="[word-break:break-word] absolute inset-[38.84%_22.16%_60.81%_76.64%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:218">
                 1
               </p>
@@ -215,7 +217,7 @@
           </div>
           <div id="detail-item-2" class="absolute contents inset-[39.41%_30.1%_58.89%_17.9%] cursor-pointer transition-opacity duration-200" onclick="highlightDetail(2)" data-node-id="3:239">
             <div class="absolute contents inset-[39.41%_30.1%_60.11%_66.7%]" data-node-id="3:240">
-              <div id="detail-badge-2" class="absolute inset-[39.41%_30.1%_60.11%_66.7%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:241"></div>
+              <div id="detail-badge-2" class="hover-lift absolute inset-[39.41%_30.1%_60.11%_66.7%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:241" data-interactive tabindex="0" role="button" aria-label="Obrotowe ramię" onclick="highlightDetail(2)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(2);}"></div>
               <p class="[word-break:break-word] absolute inset-[39.46%_31.06%_60.2%_67.74%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:242">
                 2
               </p>
@@ -251,7 +253,7 @@
                 <p class="absolute inset-[62.02%_21.4%_37.71%_62.8%]" data-node-id="3:255">nie nagrzewa się i jest </p>
                 <p class="absolute inset-[62.38%_21.8%_37.35%_62.8%]" data-node-id="3:256">bezpieczna w dotyku. </p>
               </div>
-              <div id="safety-badge-cool" class="absolute bottom-[37.32%] left-1/2 right-[40.4%] top-[61.24%] rounded-2xl transition-all duration-200" data-node-id="3:258">
+              <div id="safety-badge-cool" class="hover-lift absolute bottom-[37.32%] left-1/2 right-[40.4%] top-[61.24%] rounded-2xl transition-all duration-200" data-node-id="3:258" data-interactive tabindex="0" role="button" aria-label="CoolTouch" onclick="highlightSafety('cool')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightSafety('cool');}">
                 <img alt="" class="absolute block inset-0 max-w-none size-full" height="96" src="imgZzhAiCooltouch4C00001.png" width="96" />
               </div>
             </div>
@@ -263,7 +265,7 @@
               <p class="absolute inset-[56.86%_16.6%_42.87%_62.8%]" data-node-id="3:262">wody, niezależnie od skoków </p>
               <p class="absolute inset-[57.22%_22.3%_42.51%_62.8%]" data-node-id="3:263">ciśnienia w instalacji. </p>
             </div>
-            <div id="safety-badge-turbo" class="absolute bottom-[42.48%] left-1/2 right-[40.4%] top-[56.08%] rounded-2xl transition-all duration-200" data-node-id="3:265">
+            <div id="safety-badge-turbo" class="hover-lift absolute bottom-[42.48%] left-1/2 right-[40.4%] top-[56.08%] rounded-2xl transition-all duration-200" data-node-id="3:265" data-interactive tabindex="0" role="button" aria-label="TurboStat" onclick="highlightSafety('turbo')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightSafety('turbo');}">
               <img alt="" class="absolute block inset-0 max-w-none size-full" height="96" src="imgZzhAiTurbostat4C00001.png" width="96" />
             </div>
           </div>
@@ -275,7 +277,7 @@
                 <p class="absolute inset-[59.49%_16.5%_40.24%_62.8%]" data-node-id="3:270">włączeniu zbyt gorącej wody, </p>
                 <p class="absolute inset-[59.85%_21.7%_39.88%_62.8%]" data-node-id="3:271">chroniąc Twoją skórę. </p>
               </div>
-              <div id="safety-badge-safe" class="absolute bottom-[39.85%] left-1/2 right-[40.4%] top-[58.71%] rounded-2xl transition-all duration-200" data-node-id="3:273">
+              <div id="safety-badge-safe" class="hover-lift absolute bottom-[39.85%] left-1/2 right-[40.4%] top-[58.71%] rounded-2xl transition-all duration-200" data-node-id="3:273" data-interactive tabindex="0" role="button" aria-label="SafeStop" onclick="highlightSafety('safe')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightSafety('safe');}">
                 <img alt="" class="absolute block inset-0 max-w-none size-full" height="96" src="imgEditZzhFbSafestop3800101.png" width="96" />
               </div>
             </div>
@@ -653,7 +655,9 @@ window.addEventListener('resize', resizeStage);
 window.addEventListener('load', resizeStage);
 resizeStage();
 
+var currentPanelState = 'temp';
 function showPanelState(state){
+  currentPanelState = state;
   ['temp','stream','pressure'].forEach(function(s){
     document.getElementById('panel-'+s).classList.toggle('hidden', s !== state);
     document.getElementById('caption-'+s).classList.toggle('hidden', s !== state);
@@ -661,6 +665,11 @@ function showPanelState(state){
   });
 }
 showPanelState('temp');
+
+function hoverPill(id, on){
+  if (id === currentPanelState) return;
+  document.getElementById('pillBg-'+id).style.backgroundColor = on ? 'rgba(255,255,255,0.06)' : 'transparent';
+}
 
 function highlightDetail(n){
   for (var i = 1; i <= 5; i++){
