@@ -697,7 +697,7 @@ function highlightColumn(name){
     var c = cols[i];
     var col = document.getElementById('col-' + c);
     var op = (name === null || c === name) ? '1' : '0.35';
-    var targets = col.querySelectorAll('p, div[class*="rounded-full"], div[class*="rounded-2xl"]');
+    var targets = col.querySelectorAll('p, img');
     for (var j = 0; j < targets.length; j++){
       targets[j].style.transition = 'opacity 0.2s';
       targets[j].style.opacity = op;
