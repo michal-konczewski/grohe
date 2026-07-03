@@ -242,7 +242,7 @@
           <p class="[word-break:break-word] absolute inset-[55.09%_23.73%_44.57%_23.77%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:250">
             TECHNOLOGIA, KTÓRA ZAPEWNIA BEZPIECZEŃSTWO
           </p>
-          <img id="safety-photo" src="imgGlowica.jpg" alt="GROHE bezpieczeństwo" style="position:absolute; left:130px; top:3705px; width:361px; height:495px; object-fit:cover; border-radius:8px; transition:opacity 0.2s;">
+          <img id="safety-photo" src="imgGlowica.jpg" alt="GROHE bezpieczeństwo" style="position:absolute; left:130px; top:3740px; width:310px; height:425px; object-fit:cover; border-radius:8px; transition:opacity 0.2s;">
           <div id="safety-item-cool" class="absolute bottom-[37.32%] contents left-1/2 right-[14.3%] top-[61.24%] cursor-pointer" onclick="highlightSafety('cool')" data-node-id="3:251">
             <div class="absolute bottom-[37.32%] contents left-1/2 right-[14.3%] top-[61.24%]" data-node-id="3:252">
               <div class="[word-break:break-word] absolute contents inset-[61.3%_14.3%_37.35%_62.8%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:257">
@@ -687,7 +687,7 @@ function highlightSafety(name){
     var texts = item.querySelectorAll('p');
     var op = (n === name) ? '1' : '0.4';
     for (var j = 0; j < texts.length; j++){ texts[j].style.opacity = op; }
-    badge.style.boxShadow = (n === name) ? '0 0 0 3px #8CC63F' : 'none';
+    badge.style.opacity = op;
   }
 }
 
