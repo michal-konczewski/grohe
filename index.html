@@ -6,10 +6,10 @@
 <title>GROHE Euphoria SmartControl 310 Duo</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-  html, body { margin:0; padding:0; background:#0F2B4B; min-height:100%; width:100%; }
+  html, body { margin:0; padding:0; background:#ffffff; min-height:100%; width:100%; }
   #stage, #stage * { font-family: Helvetica, Arial, sans-serif !important; }
-  #stageOuter { width:100%; position:relative; overflow:hidden; background:#0F2B4B; display:block; }
-  #stage { width:1000px; height:6653px; position:relative; transform-origin: top left; background:#0F2B4B; }
+  #stageOuter { width:100%; position:relative; overflow:hidden; background:#ffffff; display:block; }
+  #stage { width:1000px; height:6653px; position:absolute; top:0; left:50%; transform-origin: top left; background:#0F2B4B; }
 </style>
 </head>
 <body>
@@ -607,8 +607,10 @@ function resizeStage(){
   var outer = document.getElementById('stageOuter');
   var stage = document.getElementById('stage');
   var w = outer.clientWidth;
-  var scale = w/1000;
+  var scale = Math.min(1, w/1000);
   stage.style.transform = 'scale(' + scale + ')';
+  stage.style.left = '50%';
+  stage.style.marginLeft = (-500*scale) + 'px';
   outer.style.height = (6653*scale) + 'px';
 }
 window.addEventListener('resize', resizeStage);
