@@ -242,8 +242,8 @@
           <p class="[word-break:break-word] absolute inset-[55.09%_23.73%_44.57%_23.77%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:250">
             TECHNOLOGIA, KTÓRA ZAPEWNIA BEZPIECZEŃSTWO
           </p>
+          <img id="safety-photo" src="imgGlowica.jpg" alt="GROHE bezpieczeństwo" style="position:absolute; left:130px; top:3705px; width:361px; height:495px; object-fit:cover; border-radius:8px; transition:opacity 0.2s;">
           <div id="safety-item-cool" class="absolute bottom-[37.32%] contents left-1/2 right-[14.3%] top-[61.24%] cursor-pointer" onclick="highlightSafety('cool')" data-node-id="3:251">
-            <img id="safety-photo-cool" src="imgTechnologia.jpg" alt="GROHE CoolTouch" style="position:absolute; left:130px; top:4047px; width:110px; height:151px; object-fit:cover; border-radius:8px; transition:all 0.2s;">
             <div class="absolute bottom-[37.32%] contents left-1/2 right-[14.3%] top-[61.24%]" data-node-id="3:252">
               <div class="[word-break:break-word] absolute contents inset-[61.3%_14.3%_37.35%_62.8%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:257">
                 <p class="absolute inset-[61.3%_14.3%_38.43%_62.8%]" data-node-id="3:253">Technologia GROHE CoolTouch </p>
@@ -257,7 +257,6 @@
             </div>
           </div>
           <div id="safety-item-turbo" class="absolute bottom-[42.48%] contents left-1/2 right-[14.6%] top-[56.08%] cursor-pointer" onclick="highlightSafety('turbo')" data-node-id="3:259">
-            <img id="safety-photo-turbo" src="imgGlowica.jpg" alt="GROHE TurboStat" style="position:absolute; left:130px; top:3704px; width:110px; height:151px; object-fit:cover; border-radius:8px; transition:all 0.2s;">
             <div class="[word-break:break-word] absolute contents inset-[56.14%_14.6%_42.51%_62.8%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:264">
               <p class="absolute inset-[56.14%_17.7%_43.59%_62.8%]" data-node-id="3:260">Głowica GROHE TurboStat </p>
               <p class="absolute inset-[56.5%_14.6%_43.23%_62.8%]" data-node-id="3:261">utrzymuje wybraną temperaturę </p>
@@ -269,7 +268,6 @@
             </div>
           </div>
           <div id="safety-item-safe" class="absolute bottom-[39.85%] contents left-1/2 right-[16.5%] top-[58.71%] cursor-pointer" onclick="highlightSafety('safe')" data-node-id="3:266">
-            <img id="safety-photo-safe" src="imgBlokada.jpg" alt="GROHE SafeStop" style="position:absolute; left:130px; top:3878px; width:110px; height:151px; object-fit:cover; border-radius:8px; transition:all 0.2s;">
             <div class="absolute bottom-[39.85%] contents left-1/2 right-[16.5%] top-[58.71%]" data-node-id="3:267">
               <div class="[word-break:break-word] absolute contents inset-[58.77%_16.5%_39.88%_62.8%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:272">
                 <p class="absolute inset-[58.77%_18%_40.96%_62.8%]" data-node-id="3:268">Blokada GROHE SafeStop </p>
@@ -678,25 +676,18 @@ function highlightDetail(n){
   }
 }
 
+var safetyPhotos = {cool: 'imgTechnologia.jpg', turbo: 'imgGlowica.jpg', safe: 'imgBlokada.jpg'};
 function highlightSafety(name){
   var names = ['cool','turbo','safe'];
+  document.getElementById('safety-photo').src = safetyPhotos[name];
   for (var i = 0; i < names.length; i++){
     var n = names[i];
     var item = document.getElementById('safety-item-' + n);
     var badge = document.getElementById('safety-badge-' + n);
-    var photo = document.getElementById('safety-photo-' + n);
     var texts = item.querySelectorAll('p');
     var op = (n === name) ? '1' : '0.4';
     for (var j = 0; j < texts.length; j++){ texts[j].style.opacity = op; }
-    if (n === name){
-      badge.style.boxShadow = '0 0 0 3px #8CC63F';
-      photo.style.opacity = '1';
-      photo.style.boxShadow = '0 0 0 3px #8CC63F';
-    } else {
-      badge.style.boxShadow = 'none';
-      photo.style.opacity = '0.4';
-      photo.style.boxShadow = 'none';
-    }
+    badge.style.boxShadow = (n === name) ? '0 0 0 3px #8CC63F' : 'none';
   }
 }
 
