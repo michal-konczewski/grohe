@@ -42,10 +42,13 @@ input.style-off { position: absolute; opacity: 0; width: 0; height: 0; pointer-e
 .gp-body { font-size: 16px; line-height: 24px; color: rgba(255,255,255,.65); }
 
 /* ── HERO ─────────────────────────────────────────── */
-.gp-hero { position: relative; background: linear-gradient(to right, #000 0%, #0F2B4B 100%); overflow: hidden; height: 620px; }
-.gp-hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; opacity: .8; }
-.gp-hero__inner { position: relative; z-index: 2; padding: 32px 56px 0; height: 100%; }
+.gp-hero { position: relative; background: #0F2B4B; padding: 34px 115px 0; }
+.gp-hero__photo-frame { position: relative; width: 100%; aspect-ratio: 1400/1192; overflow: hidden; border-radius: 2px; }
+.gp-hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.gp-hero__inner { position: absolute; inset: 0; z-index: 2; padding: 24px 40px 0; height: 100%; }
+.gp-hero__inner { display: flex; flex-direction: column; }
 .gp-hero__top { display: flex; justify-content: flex-end; align-items: center; gap: 16px; margin-bottom: 48px; }
+.gp-hero__content { margin-top: auto; }
 .gp-hero__tagline { color: rgba(255,255,255,.6); font-size: 11px; text-align: right; line-height: 1.5; text-transform: uppercase; letter-spacing: .5px; }
 .gp-hero__logo { height: 32px; width: auto; }
 .gp-hero__content { max-width: 700px; }
@@ -60,9 +63,9 @@ input.style-off { position: absolute; opacity: 0; width: 0; height: 0; pointer-e
 #gp-tab-pressure:checked ~ .gp .gp-hero__tab[for="gp-tab-pressure"] { color: #fff; border-top-color: #4ABFF1; background: rgba(255,255,255,.08); }
 
 .gp-below-hero { background: #0F2B4B; }
-.gp-panel { position: relative; padding: 32px 56px 0; min-height: 300px; }
+.gp-panel { position: relative; padding: 32px 115px 0; min-height: 300px; }
 .gp-panel__caption { display: none; text-align: center; font-size: 16px; line-height: 1.4; color: #fff; max-width: 260px; margin: 0 auto 16px; }
-.gp .gp-panel__img { display: none; width: 100%; max-width: 900px; margin: 0 auto; }
+.gp .gp-panel__img { display: none; width: 100%; max-width: 970px; margin: 0 auto; }
 #gp-tab-temp:checked ~ .gp .gp-panel__caption--temp,
 #gp-tab-temp:checked ~ .gp .gp-panel__img--temp { display: block; }
 #gp-tab-stream:checked ~ .gp .gp-panel__caption--stream,
@@ -70,7 +73,7 @@ input.style-off { position: absolute; opacity: 0; width: 0; height: 0; pointer-e
 #gp-tab-pressure:checked ~ .gp .gp-panel__caption--pressure,
 #gp-tab-pressure:checked ~ .gp .gp-panel__img--pressure { display: block; }
 
-.gp-diagram { position: relative; padding: 24px 56px 0; }
+.gp-diagram { position: relative; padding: 24px 115px 0; }
 .gp-diagram__row { display: flex; justify-content: space-between; max-width: 620px; margin: 0 auto 12px; }
 .gp-diagram__hint { font-size: 16px; line-height: 1.4; color: #fff; text-align: center; max-width: 220px; cursor: default; }
 .gp-diagram__img-wrap { position: relative; max-width: 620px; margin: 0 auto; }
@@ -162,13 +165,13 @@ input.style-off { position: absolute; opacity: 0; width: 0; height: 0; pointer-e
 .gp-features__grid .gp-features__col:hover { opacity: 1; }
 
 /* ── WORLD OF GROHE ───────────────────────────────── */
-.gp-world { padding: 64px 0 0; }
+.gp-world { padding: 64px 115px 0; }
 .gp-world h2 { margin-bottom: 40px; }
 .gp-world__strip { line-height: 0; }
-.gp-world__strip img { width: 100%; height: 280px; object-fit: cover; }
-.gp-world__labels { display: grid; grid-template-columns: repeat(4, 1fr); background: #081420; }
+.gp-world__strip img { width: 100%; height: 280px; object-fit: cover; border-radius: 2px; }
+.gp-world__labels { display: grid; grid-template-columns: repeat(4, 1fr); }
 .gp-world__label { padding: 20px 12px; text-align: center; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.7); text-transform: uppercase; letter-spacing: 1px; line-height: 20px; }
-.gp-world__footer { display: flex; justify-content: flex-end; align-items: center; gap: 16px; padding: 28px 56px; background: #081420; border-top: 1px solid rgba(255,255,255,.1); }
+.gp-world__footer { display: flex; justify-content: flex-end; align-items: center; gap: 16px; padding: 28px 0 40px; }
 .gp-world__footer img { height: 30px; width: auto; }
 .gp-world__tagline { color: rgba(255,255,255,.5); font-size: 11px; text-align: right; line-height: 1.5; text-transform: uppercase; letter-spacing: .5px; }
 
@@ -206,20 +209,22 @@ input.style-off { position: absolute; opacity: 0; width: 0; height: 0; pointer-e
 
 <!-- ═══ HERO ═══════════════════════════════════════════════════════════ -->
 <section class="gp-hero">
-  <img class="gp-hero__bg" src="img/hero-bg.png" alt="" width="1400" height="1193">
-  <div class="gp-hero__inner">
-    <div class="gp-hero__top">
-      <span class="gp-hero__tagline">Pure Freude<br>an Wasser</span>
-      <img class="gp-hero__logo" src="img/grohe-logo.svg" alt="GROHE" width="94" height="18">
-    </div>
-    <div class="gp-hero__content">
-      <h2>Wciśnij, przekręć i poczuj różnicę</h2>
-      <p>Pełna kontrola w Twoich rękach – system SmartControl zapewnia intuicyjną obsługę, która odmieni Twoją kąpiel. Czas na Twój ruch!</p>
-    </div>
-    <div class="gp-hero__tabs">
-      <label class="gp-hero__tab" for="gp-tab-temp">Regulacja temperatury</label>
-      <label class="gp-hero__tab" for="gp-tab-stream">Wybór strumienia</label>
-      <label class="gp-hero__tab" for="gp-tab-pressure">Ustawienie ciśnienia</label>
+  <div class="gp-hero__photo-frame">
+    <img class="gp-hero__bg" src="img/hero-bg.png" alt="" width="1400" height="1192">
+    <div class="gp-hero__inner">
+      <div class="gp-hero__top">
+        <span class="gp-hero__tagline">Pure Freude<br>an Wasser</span>
+        <img class="gp-hero__logo" src="img/grohe-logo.svg" alt="GROHE" width="94" height="18">
+      </div>
+      <div class="gp-hero__content">
+        <h2>Wciśnij, przekręć i poczuj różnicę</h2>
+        <p>Pełna kontrola w Twoich rękach – system SmartControl zapewnia intuicyjną obsługę, która odmieni Twoją kąpiel. Czas na Twój ruch!</p>
+      </div>
+      <div class="gp-hero__tabs">
+        <label class="gp-hero__tab" for="gp-tab-temp">Regulacja temperatury</label>
+        <label class="gp-hero__tab" for="gp-tab-stream">Wybór strumienia</label>
+        <label class="gp-hero__tab" for="gp-tab-pressure">Ustawienie ciśnienia</label>
+      </div>
     </div>
   </div>
 </section>
@@ -456,6 +461,5 @@ input.style-off { position: absolute; opacity: 0; width: 0; height: 0; pointer-e
 </section>
 
 </div>
-
 </body>
 </html>
