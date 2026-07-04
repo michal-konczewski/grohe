@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GROHE Euphoria SmartControl 310 Duo - karta produktowa</title>
+<style>html,body{margin:0;padding:0;background:#0F2B4B;}</style>
+</head>
+<body>
+<input type="radio" name="gp-tab" id="gp-tab-temp" class="style-off" checked>
+<input type="radio" name="gp-tab" id="gp-tab-stream" class="style-off">
+<input type="radio" name="gp-tab" id="gp-tab-pressure" class="style-off">
+
+<input type="radio" name="gp-mode" id="gp-mode-rain" class="style-off" checked>
+<input type="radio" name="gp-mode" id="gp-mode-hand" class="style-off">
+
+<input type="radio" name="gp-detail" id="gp-detail-1" class="style-off" checked>
+<input type="radio" name="gp-detail" id="gp-detail-2" class="style-off">
+<input type="radio" name="gp-detail" id="gp-detail-3" class="style-off">
+<input type="radio" name="gp-detail" id="gp-detail-4" class="style-off">
+<input type="radio" name="gp-detail" id="gp-detail-5" class="style-off">
+
+<input type="radio" name="gp-safety" id="gp-safety-turbostat" class="style-off" checked>
+<input type="radio" name="gp-safety" id="gp-safety-safestop" class="style-off">
+<input type="radio" name="gp-safety" id="gp-safety-cooltouch" class="style-off">
+
+<div class="gp">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+.gp, .gp *, .gp *::before, .gp *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.gp { font-family: 'Nunito', sans-serif; width: 1200px; overflow: hidden; color: rgba(38,50,72,.7); background: #0F2B4B; }
+.gp img { display: block; max-width: 100%; }
+.gp ul, .gp ol { list-style: none; }
+.gp h2, .gp h3, .gp h4 { font-weight: 600; }
+
+input.style-off { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
+
+.gp-h2 { font-size: 28px; line-height: 40px; color: #fff; text-align: center; text-transform: uppercase; letter-spacing: .5px; max-width: 796px; margin: 0 auto 48px; }
+.gp-h3 { font-size: 24px; line-height: 32px; color: rgba(255,255,255,.6); text-align: center; text-transform: uppercase; letter-spacing: .5px; margin-top: 8px; }
+.gp-h4 { font-size: 18px; line-height: 27px; color: #fff; text-transform: uppercase; letter-spacing: .3px; margin-bottom: 6px; }
+.gp-body { font-size: 16px; line-height: 24px; color: rgba(255,255,255,.65); }
+
+/* ── HERO ─────────────────────────────────────────── */
+.gp-hero { position: relative; background: linear-gradient(to right, #000 0%, #0F2B4B 100%); overflow: hidden; height: 620px; }
+.gp-hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; opacity: .8; }
+.gp-hero__inner { position: relative; z-index: 2; padding: 32px 56px 0; height: 100%; }
+.gp-hero__top { display: flex; justify-content: flex-end; align-items: center; gap: 16px; margin-bottom: 48px; }
+.gp-hero__tagline { color: rgba(255,255,255,.6); font-size: 11px; text-align: right; line-height: 1.5; text-transform: uppercase; letter-spacing: .5px; }
+.gp-hero__logo { height: 32px; width: auto; }
+.gp-hero__content { max-width: 700px; }
+.gp-hero__content h2 { font-size: 28px; line-height: 40px; font-weight: 600; color: #fff; text-transform: uppercase; letter-spacing: .5px; }
+.gp-hero__content p { font-size: 16px; line-height: 24px; color: rgba(255,255,255,.75); margin-top: 16px; max-width: 560px; }
+
+.gp-hero__tabs { display: flex; margin-top: 40px; border-top: 1px solid rgba(255,255,255,.15); }
+.gp-hero__tab { flex: 1; padding: 18px 12px; color: rgba(255,255,255,.5); font-size: 14px; font-weight: 600; text-align: center; text-transform: uppercase; letter-spacing: .4px; border-top: 3px solid transparent; margin-top: -1px; cursor: pointer; transition: color .2s, background-color .2s; }
+.gp-hero__tab:hover { background: rgba(255,255,255,.06); color: rgba(255,255,255,.8); }
+#gp-tab-temp:checked ~ .gp .gp-hero__tab[for="gp-tab-temp"],
+#gp-tab-stream:checked ~ .gp .gp-hero__tab[for="gp-tab-stream"],
+#gp-tab-pressure:checked ~ .gp .gp-hero__tab[for="gp-tab-pressure"] { color: #fff; border-top-color: #4ABFF1; background: rgba(255,255,255,.08); }
+
+.gp-below-hero { background: #0F2B4B; }
+.gp-panel { position: relative; padding: 32px 56px 0; min-height: 300px; }
+.gp-panel__caption { display: none; text-align: center; font-size: 16px; line-height: 1.4; color: #fff; max-width: 260px; margin: 0 auto 16px; }
+.gp .gp-panel__img { display: none; width: 100%; max-width: 900px; margin: 0 auto; }
+#gp-tab-temp:checked ~ .gp .gp-panel__caption--temp,
+#gp-tab-temp:checked ~ .gp .gp-panel__img--temp { display: block; }
+#gp-tab-stream:checked ~ .gp .gp-panel__caption--stream,
+#gp-tab-stream:checked ~ .gp .gp-panel__img--stream { display: block; }
+#gp-tab-pressure:checked ~ .gp .gp-panel__caption--pressure,
+#gp-tab-pressure:checked ~ .gp .gp-panel__img--pressure { display: block; }
+
+.gp-diagram { position: relative; padding: 24px 56px 0; }
+.gp-diagram__row { display: flex; justify-content: space-between; max-width: 620px; margin: 0 auto 12px; }
+.gp-diagram__hint { font-size: 16px; line-height: 1.4; color: #fff; text-align: center; max-width: 220px; cursor: default; }
+.gp-diagram__img-wrap { position: relative; max-width: 620px; margin: 0 auto; }
+.gp-diagram__ring { position: absolute; top: 40%; width: 11%; aspect-ratio: 1/1; border: 2px solid #8CC63F; border-radius: 50%; box-shadow: 0 0 6px #8CC63F; opacity: 0; transform: translate(-50%,-50%); pointer-events: none; transition: opacity .2s; }
+.gp-diagram__ring--stream { left: 37%; }
+.gp-diagram__ring--pressure1 { left: 62%; }
+.gp-diagram__ring--pressure2 { left: 85%; }
+.gp-diagram__hint--stream:hover ~ .gp-diagram__img-wrap .gp-diagram__ring--stream,
+.gp-diagram__hint--pressure:hover ~ .gp-diagram__img-wrap .gp-diagram__ring--pressure1,
+.gp-diagram__hint--pressure:hover ~ .gp-diagram__img-wrap .gp-diagram__ring--pressure2 { opacity: 1; }
+
+.gp-toggle-section { padding: 32px 56px 56px; }
+.gp-toggle { position: relative; width: 66px; height: 24px; background: #fff; border-radius: 999px; margin: 0 auto 12px; }
+.gp-toggle__half { position: absolute; top: 0; width: 50%; height: 100%; cursor: pointer; }
+.gp-toggle__half:first-child { left: 0; }
+.gp-toggle__half:last-child { right: 0; }
+.gp-toggle__knob { position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%; background: #0F2B4B; transition: transform .2s; pointer-events: none; }
+#gp-mode-hand:checked ~ .gp .gp-toggle__knob { transform: translateX(42px); }
+.gp-toggle-labels { display: flex; justify-content: center; gap: 24px; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 40px; }
+.gp-toggle-labels label { cursor: pointer; color: rgba(255,255,255,.45); }
+#gp-mode-rain:checked ~ .gp .gp-toggle-labels label[for="gp-mode-rain"],
+#gp-mode-hand:checked ~ .gp .gp-toggle-labels label[for="gp-mode-hand"] { color: #fff; }
+
+.gp-mode-panel { display: none; align-items: center; justify-content: center; gap: 48px; }
+#gp-mode-rain:checked ~ .gp .gp-mode-panel--rain,
+#gp-mode-hand:checked ~ .gp .gp-mode-panel--hand { display: flex; }
+.gp-mode-panel__col { max-width: 220px; }
+.gp-mode-panel__col p { font-size: 16px; line-height: 24px; color: rgba(255,255,255,.7); }
+.gp-mode-panel__col p + p { margin-top: 8px; }
+.gp-mode-panel__col ul { border-bottom: 1px solid rgba(255,255,255,.2); padding-bottom: 12px; margin-bottom: 4px; }
+.gp-mode-panel img { max-width: 240px; }
+
+/* ── DETAILS ──────────────────────────────────────── */
+.gp-details { position: relative; overflow: hidden; padding: 72px 56px; }
+.gp-details__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .3; }
+.gp-details__layout { position: relative; z-index: 2; display: flex; gap: 56px; align-items: center; max-width: 1100px; margin: 0 auto; }
+.gp-details__list { flex: 0 0 460px; display: flex; flex-direction: column; gap: 8px; }
+.gp-details__item { display: flex; gap: 20px; padding: 14px 12px; border-radius: 8px; cursor: pointer; transition: background-color .2s; }
+.gp-details__item:hover { background: rgba(255,255,255,.05); }
+.gp-details__num { flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px; background: #748AA3; color: #fff; font-size: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center; transition: background-color .2s, box-shadow .2s; }
+.gp-details__item label { display: contents; cursor: pointer; }
+#gp-detail-1:checked ~ .gp label[for="gp-detail-1"] .gp-details__num,
+#gp-detail-2:checked ~ .gp label[for="gp-detail-2"] .gp-details__num,
+#gp-detail-3:checked ~ .gp label[for="gp-detail-3"] .gp-details__num,
+#gp-detail-4:checked ~ .gp label[for="gp-detail-4"] .gp-details__num,
+#gp-detail-5:checked ~ .gp label[for="gp-detail-5"] .gp-details__num { background: #4ABFF1; box-shadow: 0 0 0 3px rgba(74,191,241,.35); }
+.gp-details__item { opacity: .45; transition: opacity .2s; }
+#gp-detail-1:checked ~ .gp label[for="gp-detail-1"],
+#gp-detail-2:checked ~ .gp label[for="gp-detail-2"],
+#gp-detail-3:checked ~ .gp label[for="gp-detail-3"],
+#gp-detail-4:checked ~ .gp label[for="gp-detail-4"],
+#gp-detail-5:checked ~ .gp label[for="gp-detail-5"] { opacity: 1; }
+.gp-details__body h4 { font-size: 18px; line-height: 27px; font-weight: 600; color: #fff; text-transform: uppercase; margin-bottom: 4px; }
+.gp-details__body p { font-size: 16px; line-height: 24px; color: rgba(255,255,255,.65); }
+.gp-details__img { flex: 1; display: flex; justify-content: center; position: relative; z-index: 2; }
+.gp-details__img img { max-width: 320px; height: auto; }
+
+/* ── TECHNOLOGY / SAFETY ──────────────────────────── */
+.gp-tech { padding: 72px 56px; }
+.gp-tech__layout { display: flex; gap: 56px; align-items: center; max-width: 1100px; margin: 0 auto; }
+.gp-tech__photo { flex: 0 0 460px; position: relative; height: 340px; border-radius: 12px; overflow: hidden; }
+.gp-tech__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s; }
+#gp-safety-turbostat:checked ~ .gp .gp-tech__photo img[data-for="turbostat"],
+#gp-safety-safestop:checked ~ .gp .gp-tech__photo img[data-for="safestop"],
+#gp-safety-cooltouch:checked ~ .gp .gp-tech__photo img[data-for="cooltouch"] { opacity: 1; }
+.gp-tech__items { flex: 1; display: flex; flex-direction: column; gap: 28px; }
+.gp-tech__item { display: flex; gap: 20px; align-items: flex-start; cursor: pointer; border-radius: 8px; padding: 8px; transition: background-color .2s; }
+.gp-tech__item:hover { background: rgba(255,255,255,.05); }
+.gp-tech__item img { flex: 0 0 64px; width: 64px; height: 64px; object-fit: contain; }
+.gp-tech__item label { display: contents; }
+.gp-tech__item p.gp-h4 { margin-bottom: 4px; }
+.gp-tech__item .gp-body { color: rgba(255,255,255,.6); }
+.gp-tech__item { opacity: .45; transition: opacity .2s; }
+#gp-safety-turbostat:checked ~ .gp label[for="gp-safety-turbostat"],
+#gp-safety-safestop:checked ~ .gp label[for="gp-safety-safestop"],
+#gp-safety-cooltouch:checked ~ .gp label[for="gp-safety-cooltouch"] { opacity: 1; }
+
+/* ── FEATURES GRID ────────────────────────────────── */
+.gp-features { padding: 72px 56px; }
+.gp-features__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; max-width: 1100px; margin: 40px auto 0; }
+.gp-features__col { padding: 0 24px; border-left: 1px solid rgba(255,255,255,.1); transition: opacity .2s; }
+.gp-features__col:first-child { border-left: none; }
+.gp-features__col-head { font-size: 16px; font-weight: 600; color: #fff; text-align: center; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 16px; margin-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.gp-features__cell { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 20px 8px; }
+.gp-features__cell img { width: 64px; height: 64px; object-fit: contain; margin-bottom: 12px; }
+.gp-features__name { font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+.gp-features__desc { font-size: 14px; line-height: 20px; color: rgba(255,255,255,.5); }
+.gp-features__grid:hover .gp-features__col { opacity: .35; }
+.gp-features__grid .gp-features__col:hover { opacity: 1; }
+
+/* ── WORLD OF GROHE ───────────────────────────────── */
+.gp-world { padding: 64px 0 0; }
+.gp-world h2 { margin-bottom: 40px; }
+.gp-world__strip { line-height: 0; }
+.gp-world__strip img { width: 100%; height: 280px; object-fit: cover; }
+.gp-world__labels { display: grid; grid-template-columns: repeat(4, 1fr); background: #081420; }
+.gp-world__label { padding: 20px 12px; text-align: center; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.7); text-transform: uppercase; letter-spacing: 1px; line-height: 20px; }
+.gp-world__footer { display: flex; justify-content: flex-end; align-items: center; gap: 16px; padding: 28px 56px; background: #081420; border-top: 1px solid rgba(255,255,255,.1); }
+.gp-world__footer img { height: 30px; width: auto; }
+.gp-world__tagline { color: rgba(255,255,255,.5); font-size: 11px; text-align: right; line-height: 1.5; text-transform: uppercase; letter-spacing: .5px; }
+
+/* ── MOBILE ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .gp { width: 100%; }
+  .gp-hero__inner, .gp-panel, .gp-diagram, .gp-toggle-section, .gp-details, .gp-tech, .gp-features { padding-left: 24px; padding-right: 24px; }
+  .gp-hero__content h2 { font-size: 20px; line-height: 26px; }
+  .gp-hero__content { max-width: 330px; }
+  .gp-hero__tabs { flex-direction: column; }
+  .gp-hero__tab { border-top: none; border-left: 3px solid transparent; text-align: left; }
+  #gp-tab-temp:checked ~ .gp .gp-hero__tab[for="gp-tab-temp"],
+  #gp-tab-stream:checked ~ .gp .gp-hero__tab[for="gp-tab-stream"],
+  #gp-tab-pressure:checked ~ .gp .gp-hero__tab[for="gp-tab-pressure"] { border-top-color: transparent; border-left-color: #4ABFF1; }
+
+  .gp-diagram__row { flex-direction: column; gap: 8px; align-items: center; }
+  .gp-mode-panel { flex-direction: column; gap: 16px; }
+
+  .gp-h2 { font-size: 20px; line-height: 26px; max-width: 330px; }
+  .gp-h3 { font-size: 20px; line-height: 26px; }
+  .gp-details__layout, .gp-tech__layout { flex-direction: column; max-width: 330px; }
+  .gp-details__list, .gp-tech__photo { flex: none; width: 100%; }
+  .gp-tech__photo { height: 220px; }
+  .gp-details__img img { max-width: 240px; }
+
+  .gp-features__grid { grid-template-columns: 1fr; max-width: 330px; }
+  .gp-features__col { border-left: none; border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px; margin-top: 24px; }
+  .gp-features__col:first-child { border-top: none; margin-top: 0; padding-top: 0; }
+
+  .gp-world__strip { grid-template-columns: repeat(2, 1fr); }
+  .gp-world__labels { grid-template-columns: repeat(2, 1fr); }
+  .gp-world__footer { padding: 20px 24px; }
+}
+</style>
+
+<!-- ═══ HERO ═══════════════════════════════════════════════════════════ -->
+<section class="gp-hero">
+  <img class="gp-hero__bg" src="img/hero-bg.png" alt="" width="1400" height="1193">
+  <div class="gp-hero__inner">
+    <div class="gp-hero__top">
+      <span class="gp-hero__tagline">Pure Freude<br>an Wasser</span>
+      <img class="gp-hero__logo" src="img/grohe-logo.svg" alt="GROHE" width="94" height="18">
+    </div>
+    <div class="gp-hero__content">
+      <h2>Wciśnij, przekręć i poczuj różnicę</h2>
+      <p>Pełna kontrola w Twoich rękach – system SmartControl zapewnia intuicyjną obsługę, która odmieni Twoją kąpiel. Czas na Twój ruch!</p>
+    </div>
+    <div class="gp-hero__tabs">
+      <label class="gp-hero__tab" for="gp-tab-temp">Regulacja temperatury</label>
+      <label class="gp-hero__tab" for="gp-tab-stream">Wybór strumienia</label>
+      <label class="gp-hero__tab" for="gp-tab-pressure">Ustawienie ciśnienia</label>
+    </div>
+  </div>
+</section>
+
+<section class="gp-below-hero">
+  <div class="gp-panel">
+    <p class="gp-panel__caption gp-panel__caption--temp">Przekręć, by ustawić idealną temperaturę wody.</p>
+    <p class="gp-panel__caption gp-panel__caption--stream">Wciśnij, by uruchomić wybrany strumień.</p>
+    <p class="gp-panel__caption gp-panel__caption--pressure">Przekręć, by dopasować natężenie przepływu.</p>
+    <img class="gp-panel__img gp-panel__img--temp" src="img/panel-temp.png" alt="Regulacja temperatury" width="808" height="539">
+    <img class="gp-panel__img gp-panel__img--stream" src="img/panel-stream.png" alt="Wybór strumienia" width="808" height="539">
+    <img class="gp-panel__img gp-panel__img--pressure" src="img/panel-pressure.png" alt="Ustawienie ciśnienia" width="808" height="539">
+  </div>
+
+  <div class="gp-diagram">
+    <div class="gp-diagram__row">
+      <label class="gp-diagram__hint gp-diagram__hint--stream" for="gp-tab-stream">Wciśnij, żeby skorzystać ze słuchawki prysznicowej.</label>
+      <label class="gp-diagram__hint gp-diagram__hint--pressure" for="gp-tab-pressure">Wciśnij, żeby skorzystać z jednego z 2 strumieni deszczownicy.</label>
+    </div>
+    <div class="gp-diagram__img-wrap">
+      <img src="img/knob-diagram.png" alt="Panel sterowania GROHE Euphoria SmartControl" width="836" height="162">
+      <span class="gp-diagram__ring gp-diagram__ring--stream"></span>
+      <span class="gp-diagram__ring gp-diagram__ring--pressure1"></span>
+      <span class="gp-diagram__ring gp-diagram__ring--pressure2"></span>
+    </div>
+  </div>
+
+  <div class="gp-toggle-section">
+    <div class="gp-toggle">
+      <label class="gp-toggle__half" for="gp-mode-rain" aria-label="Deszczownica"></label>
+      <label class="gp-toggle__half" for="gp-mode-hand" aria-label="Słuchawka"></label>
+      <span class="gp-toggle__knob"></span>
+    </div>
+    <div class="gp-toggle-labels">
+      <label for="gp-mode-rain">Deszczownica</label>
+      <label for="gp-mode-hand">Słuchawka</label>
+    </div>
+
+    <div class="gp-mode-panel gp-mode-panel--rain">
+      <div class="gp-mode-panel__col">
+        <p style="font-weight:600;color:#fff;">Dwa rodzaje strumienia:</p>
+        <ul style="margin-top:8px;">
+          <li class="gp-body">• otulający PureRain</li>
+          <li class="gp-body">• orzeźwiający ActiveRain</li>
+        </ul>
+      </div>
+      <img src="img/rain-diagram.png" alt="Deszczownica GROHE Euphoria SmartControl 310 Duo" width="598" height="598">
+      <div class="gp-mode-panel__col">
+        <p class="gp-body">Równe ciśnienie w każdej dyszy zapewniające wysoki komfort kąpieli</p>
+        <p style="font-weight:600;color:#fff;margin-top:16px;">Duża, 31 cm średnica</p>
+      </div>
+    </div>
+
+    <div class="gp-mode-panel gp-mode-panel--hand">
+      <div class="gp-mode-panel__col">
+        <p style="font-weight:600;color:#fff;">3 rodzaje strumienia:</p>
+        <ul style="margin-top:8px;">
+          <li class="gp-body">• delikatny Rain</li>
+          <li class="gp-body">• odprężający Massage</li>
+          <li class="gp-body">• oszczędny SmartRain</li>
+        </ul>
+      </div>
+      <img src="img/sluchawka.png" alt="Słuchawka prysznicowa GROHE" width="160" height="320">
+      <div class="gp-mode-panel__col">
+        <p class="gp-body">Obróć, żeby przełączać się między strumieniami</p>
+        <p class="gp-body" style="margin-top:16px;">Łatwe usuwanie kamienia z silikonowych dysz</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DETALE ═════════════════════════════════════════════════════════ -->
+<section class="gp-details">
+  <img class="gp-details__bg" src="img/detail-main-photo.png" alt="">
+  <h2 class="gp-h2" style="position:relative;z-index:2;">Detale, które mają znaczenie</h2>
+  <div class="gp-details__layout">
+    <div class="gp-details__list">
+      <label class="gp-details__item" for="gp-detail-1">
+        <span class="gp-details__num">1</span>
+        <span class="gp-details__body">
+          <h4>Obfity strumień</h4>
+          <p>Technologia GROHE DreamSpray utrzymuje równe ciśnienie w każdej dyszy natrysku.</p>
+        </span>
+      </label>
+      <label class="gp-details__item" for="gp-detail-2">
+        <span class="gp-details__num">2</span>
+        <span class="gp-details__body">
+          <h4>Obrotowe ramię</h4>
+          <p>Pozwala wygodnie ustawić deszczownicę w optymalnej pozycji.</p>
+        </span>
+      </label>
+      <label class="gp-details__item" for="gp-detail-3">
+        <span class="gp-details__num">3</span>
+        <span class="gp-details__body">
+          <h4>Regulowany chwyt</h4>
+          <p>Ułatwia wygodne przesuwanie słuchawki i dostosowanie kąta natrysku.</p>
+        </span>
+      </label>
+      <label class="gp-details__item" for="gp-detail-4">
+        <span class="gp-details__num">4</span>
+        <span class="gp-details__body">
+          <h4>Radełkowane pokrętła</h4>
+          <p>Żłobiona powierzchnia gwarantuje łatwą obsługę, nawet z namydlonymi rękami.</p>
+        </span>
+      </label>
+      <label class="gp-details__item" for="gp-detail-5">
+        <span class="gp-details__num">5</span>
+        <span class="gp-details__body">
+          <h4>Nieskręcający się wąż</h4>
+          <p>Technologia TwistStop zapobiega skręcaniu się węża, zwiększając jego trwałość i poprawiając wygodę użycia.</p>
+        </span>
+      </label>
+    </div>
+    <div class="gp-details__img">
+      <img src="img/detail-thumb.png" alt="GROHE Euphoria SmartControl 310 Duo – kompletny system prysznicowy" width="296" height="974">
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TECHNOLOGIA BEZPIECZEŃSTWO ═══════════════════════════════════ -->
+<section class="gp-tech">
+  <h2 class="gp-h2">Technologia, która zapewnia bezpieczeństwo</h2>
+  <div class="gp-tech__layout">
+    <div class="gp-tech__photo">
+      <img data-for="turbostat" src="img/safety-turbostat.png" alt="GROHE TurboStat">
+      <img data-for="safestop" src="img/safety-safestop.png" alt="GROHE SafeStop">
+      <img data-for="cooltouch" src="img/safety-cooltouch.png" alt="GROHE CoolTouch">
+    </div>
+    <div class="gp-tech__items">
+      <label class="gp-tech__item" for="gp-safety-turbostat">
+        <img src="img/icon-turbostat.png" alt="TurboStat">
+        <span>
+          <p class="gp-h4">TurboStat</p>
+          <p class="gp-body">Głowica GROHE TurboStat utrzymuje wybraną temperaturę wody, niezależnie od skoków ciśnienia w instalacji.</p>
+        </span>
+      </label>
+      <label class="gp-tech__item" for="gp-safety-safestop">
+        <img src="img/icon-safestop.png" alt="SafeStop">
+        <span>
+          <p class="gp-h4">SafeStop</p>
+          <p class="gp-body">Blokada GROHE SafeStop zapobiega przypadkowemu włączeniu zbyt gorącej wody, chroniąc Twoją skórę.</p>
+        </span>
+      </label>
+      <label class="gp-tech__item" for="gp-safety-cooltouch">
+        <img src="img/icon-cooltouch.png" alt="CoolTouch">
+        <span>
+          <p class="gp-h4">CoolTouch</p>
+          <p class="gp-body">Technologia GROHE CoolTouch sprawia, że powierzchnia baterii nie nagrzewa się i jest bezpieczna w dotyku.</p>
+        </span>
+      </label>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SYSTEM FEATURES GRID ══════════════════════════════════════════ -->
+<section class="gp-features">
+  <h2 class="gp-h2" style="margin-bottom:0;">System Euphoria SmartControl 310 Duo</h2>
+  <h3 class="gp-h3">Poznaj innowacyjne rozwiązania</h3>
+
+  <div class="gp-features__grid">
+    <div class="gp-features__col">
+      <div class="gp-features__col-head">Komfort</div>
+      <div class="gp-features__cell">
+        <img src="img/icon-dreamspray.png" alt="DreamSpray">
+        <p class="gp-features__name">DreamSpray</p>
+        <p class="gp-features__desc">Równomierne ciśnienie wody w każdej dyszy</p>
+      </div>
+      <div class="gp-features__cell">
+        <img src="img/icon-smartcontrol.png" alt="SmartControl">
+        <p class="gp-features__name">SmartControl</p>
+        <p class="gp-features__desc">Intuicyjna obsługa</p>
+      </div>
+      <div class="gp-features__cell">
+        <img src="img/icon-twiststop.png" alt="TwistStop">
+        <p class="gp-features__name">TwistStop</p>
+        <p class="gp-features__desc">Wąż odporny na skręcanie</p>
+      </div>
+    </div>
+    <div class="gp-features__col">
+      <div class="gp-features__col-head">Bezpieczeństwo</div>
+      <div class="gp-features__cell">
+        <img src="img/icon-turbostat.png" alt="TurboStat">
+        <p class="gp-features__name">TurboStat</p>
+        <p class="gp-features__desc">Zawsze idealna temperatura wody</p>
+      </div>
+      <div class="gp-features__cell">
+        <img src="img/icon-safestop.png" alt="SafeStop">
+        <p class="gp-features__name">SafeStop</p>
+        <p class="gp-features__desc">Blokada bezpieczeństwa na uchwycie</p>
+      </div>
+      <div class="gp-features__cell">
+        <img src="img/icon-cooltouch.png" alt="CoolTouch">
+        <p class="gp-features__name">CoolTouch</p>
+        <p class="gp-features__desc">Nienagrzewający się korpus</p>
+      </div>
+    </div>
+    <div class="gp-features__col">
+      <div class="gp-features__col-head">Jakość</div>
+      <div class="gp-features__cell">
+        <img src="img/icon-longlife.png" alt="Long-life finish">
+        <p class="gp-features__name">Long-life finish</p>
+        <p class="gp-features__desc">Trwała, łatwa w czyszczeniu powłoka</p>
+      </div>
+      <div class="gp-features__cell">
+        <img src="img/icon-speedclean.png" alt="SpeedClean">
+        <p class="gp-features__name">SpeedClean</p>
+        <p class="gp-features__desc">Łatwe usuwanie kamienia z dysz natrysku</p>
+      </div>
+      <div class="gp-features__cell">
+        <img src="img/icon-gwarancja.png" alt="Gwarancja 5 lat">
+        <p class="gp-features__name">Gwarancja</p>
+        <p class="gp-features__desc">5 lat gwarancji producenta</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WEJDŹ DO ŚWIATA GROHE ═════════════════════════════════════════ -->
+<section class="gp-world">
+  <h2 class="gp-h2">Wejdź do świata GROHE</h2>
+  <div class="gp-world__strip">
+    <img src="img/filary-grohe.png" alt="Jakość, technologia, design, zrównoważony rozwój GROHE">
+  </div>
+  <div class="gp-world__labels">
+    <div class="gp-world__label">Jakość</div>
+    <div class="gp-world__label">Technologia</div>
+    <div class="gp-world__label">Design</div>
+    <div class="gp-world__label">Zrównoważony<br>rozwój</div>
+  </div>
+  <div class="gp-world__footer">
+    <span class="gp-world__tagline">Pure Freude<br>an Wasser</span>
+    <img src="img/grohe-logo.svg" alt="GROHE" width="94" height="18">
+  </div>
+</section>
+
+</div>
+
+</body>
+</html>
