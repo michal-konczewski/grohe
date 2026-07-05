@@ -1,743 +1,1352 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GROHE Euphoria SmartControl 310 Duo</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-  html, body { margin:0; padding:0; background:#ffffff; min-height:100%; width:100%; }
-  #stage, #stage * { font-family: Helvetica, Arial, sans-serif !important; }
-  #stageOuter { width:100%; position:relative; overflow:hidden; background:#ffffff; display:block; }
-  #stage { width:1000px; height:6653px; position:absolute; top:0; left:50%; transform-origin: top left; background:#ffffff; }
-  [data-interactive]:focus-visible { outline:2px solid #4ABFF1; outline-offset:2px; border-radius:4px; }
-  .hover-lift:hover { transform:scale(1.08); }
-</style>
-</head>
-<body>
-<div id="stageOuter">
-  <div id="stage">
-<div class="relative size-full" data-node-id="3:145">
-      <div class="absolute contents inset-0" data-node-id="3:482">
-        <div class="absolute contents inset-0" data-node-id="3:146">
-          <div class="absolute" style="left:96px; top:786px; width:808px; height:5583px; background:#0F2B4B;" data-node-id="3:147">
-          </div>
-          <div class="absolute inset-[1.47%_9.6%_88.19%_9.6%]" data-node-id="3:148">
-            <img alt="" class="absolute block inset-0 max-w-none size-full" src="imgRectangle255.svg" />
-          </div>
-          <div class="absolute overflow-hidden" style="left:96px; top:759px; width:808px; height:1634px;" data-node-id="3:153">
-            <div class="absolute" style="left:0px; top:-2553px; width:808px; height:5179px;" data-node-id="3:149">
-              <img alt="" class="absolute block inset-0 max-w-none size-full" src="imgMaskGroup78.svg" />
-            </div>
-          </div>
-          <div class="absolute inset-[1.47%_9.6%_88.19%_9.6%]" data-node-id="3:154">
-            <img alt="" class="absolute block inset-0 max-w-none size-full" height="688" src="imgGroheKv2026041504.png" width="808" />
-          </div>
-          <div class="absolute overflow-hidden" style="left:96px; top:2423.1px; width:808px; height:1192.8px;" data-node-id="3:159">
-            <div class="absolute" style="left:0px; top:-2516px; width:808px; height:5097px;" data-node-id="3:155">
-              <img alt="" class="absolute block inset-0 max-w-none size-full" src="imgMaskGroup80.svg" />
-            </div>
-          </div>
-          <div class="absolute inset-[54.16%_9.6%_1.17%_9.6%]" data-node-id="3:160">
-            <img alt="" class="absolute block inset-0 max-w-none size-full" src="imgRectangle234.svg" />
-          </div>
-          <div class="absolute contents inset-[10.54%_20.6%_88.83%_59.5%] cursor-pointer" data-node-id="3:161" onclick="showPanelState('pressure')">
-            <div id="pillBg-pressure" class="absolute inset-[10.54%_20.6%_88.83%_59.5%] rounded-md transition-colors" data-node-id="3:162" data-interactive tabindex="0" role="button" aria-label="Ustawienie ciśnienia" onmouseenter="hoverPill('pressure',true)" onmouseleave="hoverPill('pressure',false)" onclick="showPanelState('pressure')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPanelState('pressure');}"></div>
-            <p class="[word-break:break-word] absolute inset-[10.69%_23.9%_89.06%_62.4%] leading-[normal] not-italic text-[15px] text-white whitespace-nowrap" data-node-id="3:163" onmouseenter="hoverPill('pressure',true)" onmouseleave="hoverPill('pressure',false)">
-              Ustawienie ciśnienia
-            </p>
-          </div>
-          <div class="absolute contents inset-[10.54%_41.5%_88.83%_41.9%] cursor-pointer" data-node-id="3:164" onclick="showPanelState('stream')">
-            <div id="pillBg-stream" class="absolute inset-[10.54%_41.5%_88.83%_41.9%] rounded-md transition-colors" data-node-id="3:165" data-interactive tabindex="0" role="button" aria-label="Wybór strumienia" onmouseenter="hoverPill('stream',true)" onmouseleave="hoverPill('stream',false)" onclick="showPanelState('stream')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPanelState('stream');}"></div>
-            <p class="[word-break:break-word] absolute inset-[10.69%_43.9%_89.04%_43.6%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:166" onmouseenter="hoverPill('stream',true)" onmouseleave="hoverPill('stream',false)">
-              Wybór strumienia
-            </p>
-          </div>
-          <div class="absolute contents inset-[10.54%_59.1%_88.83%_20.6%] cursor-pointer" data-node-id="3:167" onclick="showPanelState('temp')">
-            <div id="pillBg-temp" class="absolute inset-[10.54%_59.1%_88.83%_20.6%] rounded-md transition-colors" data-node-id="3:168" data-interactive tabindex="0" role="button" aria-label="Regulacja temperatury" onmouseenter="hoverPill('temp',true)" onmouseleave="hoverPill('temp',false)" onclick="showPanelState('temp')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPanelState('temp');}"></div>
-            <p class="[word-break:break-word] absolute inset-[10.69%_61.4%_89.04%_22.4%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:169" onmouseenter="hoverPill('temp',true)" onmouseleave="hoverPill('temp',false)">
-              Regulacja temperatury
-            </p>
-          </div>
+<div class="grohe-card-26507000">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
-          <div class="absolute" style="left:25%; top:780px; width:50%; height:220px;" data-node-id="interactive-panel">
-            <p id="caption-temp" class="panel-caption" style="position:absolute; left:11.5%; top:0; width:200px; transform:translateX(-50%); text-align:center; color:#fff; font-size:16px; line-height:1.4;">Przekręć, by ustawić<br>idealną temperaturę wody.</p>
-            <p id="caption-stream" class="panel-caption hidden" style="position:absolute; left:50.4%; top:0; width:200px; transform:translateX(-50%); text-align:center; color:#fff; font-size:16px; line-height:1.4;">Wciśnij, by uruchomić<br>wybrany strumień.</p>
-            <p id="caption-pressure" class="panel-caption hidden" style="position:absolute; left:88.9%; top:0; width:200px; transform:translateX(-50%); text-align:center; color:#fff; font-size:16px; line-height:1.4;">Przekręć, by dopasować<br>natężenie przepływu.</p>
-            <img id="panel-temp" src="imgStateTemp.png" class="panel-image" style="position:absolute; left:50%; top:-58px; width:795.88px; max-width:none; transform:translateX(-50%);" alt="Regulacja temperatury">
-            <img id="panel-stream" src="imgStateStream.png" class="panel-image hidden" style="position:absolute; left:50%; top:-58px; width:795.88px; max-width:none; transform:translateX(-50%);" alt="Wybór strumienia">
-            <img id="panel-pressure" src="imgStatePressure.png" class="panel-image hidden" style="position:absolute; left:50%; top:-58px; width:795.88px; max-width:none; transform:translateX(-50%);" alt="Ustawienie ciśnienia">
+    .grohe-card-26507000{
+      max-width:1200px;
+      margin:0 auto;
+      font-family:'Nunito', Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    .grohe-card-26507000 *{
+      box-sizing:border-box;
+    }
+    .grohe-card-26507000 .gc-card{
+      max-width:808px;
+      margin:0 auto;
+      background:linear-gradient(to left, #010101, #102c4c);
+      color:#ffffff;
+      overflow:hidden;
+    }
+
+    /* ---- Header (mobile-only: logo in its own band) ---- */
+    .grohe-card-26507000 .gc-header{
+      display:none;
+      padding:32px 16px;
+      align-items:center;
+      justify-content:center;
+    }
+    .grohe-card-26507000 .gc-header .gc-logo img{
+      display:block;
+      width:128.843px;
+      height:50px;
+    }
+
+    /* ---- Hero ---- */
+    .grohe-card-26507000 .gc-hero{
+      position:relative;
+      width:100%;
+      aspect-ratio:808/418;
+      overflow:hidden;
+    }
+    .grohe-card-26507000 .gc-hero img.gc-hero__img{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .grohe-card-26507000 .gc-hero .gc-logo--overlay{
+      position:absolute;
+      top:32px;
+      right:32px;
+      z-index:1;
+    }
+    .grohe-card-26507000 .gc-hero .gc-logo--overlay img{
+      display:block;
+      width:242.929px;
+      height:94.273px;
+    }
+
+    /* ---- Content ---- */
+    .grohe-card-26507000 .gc-content{
+      padding:32px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      text-align:center;
+    }
+    .grohe-card-26507000 .gc-headline{
+      margin:0;
+      width:100%;
+      max-width:744px;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:600;
+      font-size:26px;
+      line-height:normal;
+      color:#ffffff;
+    }
+    .grohe-card-26507000 .gc-body{
+      margin:0;
+      width:100%;
+      max-width:744px;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:16px;
+      line-height:normal;
+      color:#ffffff;
+    }
+
+    /* ---- Feature block (tabs + images), CSS-only radio switcher ---- */
+    .grohe-card-26507000 input.style-off[type="radio"]{
+      position:absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+    .grohe-card-26507000 .gc-feature-tabs{
+      display:flex;
+      flex-direction:row;
+      gap:10px;
+      padding:32px;
+    }
+    .grohe-card-26507000 .gc-feature-tab{
+      display:block;
+      flex:1 0 0;
+      min-width:0;
+      padding:14px 8px;
+      margin:0;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:16px;
+      line-height:normal;
+      color:#ffffff;
+      text-align:center;
+      cursor:pointer;
+      user-select:none;
+    }
+    .grohe-card-26507000 .gc-feature-images{
+      position:relative;
+      padding:32px 0;
+    }
+    .grohe-card-26507000 .gc-feature-image{
+      display:none;
+      position:relative;
+      width:100%;
+      height:539px;
+      overflow:hidden;
+    }
+    .grohe-card-26507000 .gc-feature-image img{
+      position:absolute;
+      display:block;
+      max-width:none;
+      left:0;
+      top:-44.12%;
+      width:134.67%;
+      height:188.23%;
+    }
+
+    #gc-tab-temperatura:checked ~ .gc-feature-tabs .gc-feature-tab--temperatura,
+    #gc-tab-strumien:checked ~ .gc-feature-tabs .gc-feature-tab--strumien,
+    #gc-tab-cisnienie:checked ~ .gc-feature-tabs .gc-feature-tab--cisnienie{
+      background:rgba(255,255,255,0.05);
+    }
+    #gc-tab-temperatura:checked ~ .gc-feature-images .gc-feature-image--temperatura,
+    #gc-tab-strumien:checked ~ .gc-feature-images .gc-feature-image--strumien,
+    #gc-tab-cisnienie:checked ~ .gc-feature-images .gc-feature-image--cisnienie{
+      display:block;
+    }
+
+    /* ---- Product-states (neutral / handshower-active / rainshower-active), CSS-only radio switcher ---- */
+    .grohe-card-26507000 .gc-states{
+      padding:32px;
+    }
+    .grohe-card-26507000 .gc-states-stage{
+      position:relative;
+      max-width:551px;
+      margin:0 auto;
+    }
+    .grohe-card-26507000 .gc-states-captions{
+      position:relative;
+      min-height:46px;
+      margin-bottom:24px;
+    }
+    .grohe-card-26507000 .gc-state-caption{
+      display:block;
+      position:absolute;
+      top:0;
+      margin:0;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:16px;
+      line-height:1.375;
+      color:#ffffff;
+      text-align:left;
+      cursor:pointer;
+      user-select:none;
+    }
+    .grohe-card-26507000 .gc-state-caption--handshower{
+      left:2.22%;
+      width:35.22%;
+    }
+    .grohe-card-26507000 .gc-state-caption--rainshower{
+      left:53.05%;
+      width:45.2%;
+    }
+    .grohe-card-26507000 .gc-states-images{
+      position:relative;
+      width:100%;
+      aspect-ratio:553/147;
+    }
+    .grohe-card-26507000 .gc-state-image{
+      display:none;
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      object-position:center;
+    }
+    #gc-state-neutral:checked ~ .gc-states .gc-state-image--neutral,
+    #gc-state-handshower:checked ~ .gc-states .gc-state-image--handshower,
+    #gc-state-rainshower:checked ~ .gc-states .gc-state-image--rainshower{
+      display:block;
+    }
+    #gc-state-handshower:checked ~ .gc-states .gc-state-caption--handshower,
+    #gc-state-rainshower:checked ~ .gc-states .gc-state-caption--rainshower{
+      color:#c7d199;
+    }
+
+    /* ---- Product toggle (deszczownica / słuchawka), CSS-only checkbox switcher ---- */
+    .grohe-card-26507000 input.style-off[type="checkbox"]{
+      position:absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+    .grohe-card-26507000 .gc-toggle-section{
+      padding:128px 0;
+    }
+    .grohe-card-26507000 .gc-toggle-stage{
+      position:relative;
+    }
+    .grohe-card-26507000 .gc-toggle-panel{
+      display:none;
+      position:relative;
+      margin:0 auto;
+    }
+    .grohe-card-26507000 .gc-toggle-panel--deszczownica{
+      width:655.38px;
+      height:299px;
+    }
+    .grohe-card-26507000 .gc-toggle-panel--sluchawka{
+      width:537.76px;
+      height:320px;
+    }
+    #gc-product-toggle:not(:checked) ~ .gc-toggle-section .gc-toggle-stage .gc-toggle-panel--deszczownica,
+    #gc-product-toggle:checked ~ .gc-toggle-section .gc-toggle-stage .gc-toggle-panel--sluchawka{
+      display:block;
+    }
+    .grohe-card-26507000 .gc-toggle-render{
+      position:absolute;
+      display:block;
+    }
+    .grohe-card-26507000 .gc-toggle-render img{
+      display:block;
+      width:100%;
+      height:100%;
+    }
+    .grohe-card-26507000 .gc-toggle-panel--deszczownica .gc-toggle-render{
+      left:181.64px;
+      top:0;
+      width:299px;
+      height:299px;
+    }
+    .grohe-card-26507000 .gc-toggle-panel--sluchawka .gc-toggle-render{
+      left:198.08px;
+      top:0;
+      width:141px;
+      height:320px;
+    }
+    .grohe-card-26507000 .gc-annotation-head,
+    .grohe-card-26507000 .gc-annotation-body{
+      position:absolute;
+      margin:0;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:16px;
+      line-height:24px;
+      color:#ffffff;
+      white-space:nowrap;
+    }
+    .grohe-card-26507000 .gc-leader{
+      position:absolute;
+      display:block;
+      overflow:visible;
+    }
+    /* Deszczownica annotations - exact coordinates from Figma node 34:641 */
+    .grohe-card-26507000 .gc-annotation--stream-types-d .gc-annotation-head{ left:8px; top:8px; }
+    .grohe-card-26507000 .gc-annotation--stream-types-d .gc-annotation-body{ left:8px; top:38px; }
+    .grohe-card-26507000 .gc-annotation--stream-types-d .gc-leader{ left:0; top:67.25px; width:165.479px; height:31.5px; }
+    .grohe-card-26507000 .gc-annotation--size .gc-annotation-body{ left:504px; top:178px; }
+    .grohe-card-26507000 .gc-annotation--size .gc-leader{ left:469.64px; top:206.5px; width:168.608px; height:31.5px; }
+    .grohe-card-26507000 .gc-annotation--pressure .gc-annotation-body{ left:507px; top:7px; }
+    .grohe-card-26507000 .gc-annotation--pressure .gc-leader{ left:492.26px; top:102px; width:163.124px; height:31.5px; }
+    /* Sluchawka annotations - exact coordinates from Figma node 34:641 */
+    .grohe-card-26507000 .gc-annotation--stream-types-s .gc-annotation-head{ left:8px; top:80.75px; }
+    .grohe-card-26507000 .gc-annotation--stream-types-s .gc-annotation-body{ left:8px; top:110.75px; }
+    .grohe-card-26507000 .gc-annotation--stream-types-s .gc-leader{ left:0; top:164.75px; width:235.706px; height:31.5px; }
+    .grohe-card-26507000 .gc-annotation--stream-switch .gc-annotation-body{ left:371.76px; top:20.38px; }
+    .grohe-card-26507000 .gc-annotation--stream-switch .gc-leader{ left:370.24px; top:72.63px; width:167.521px; height:31.5px; }
+    .grohe-card-26507000 .gc-annotation--limescale .gc-annotation-body{ left:313.22px; top:168.75px; }
+    .grohe-card-26507000 .gc-annotation--limescale .gc-leader{ left:303.02px; top:201px; width:215.2px; height:31.5px; }
+
+    .grohe-card-26507000 .gc-toggle-control{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:16px;
+      margin-top:29px;
+    }
+    #gc-product-toggle:checked ~ .gc-toggle-section .gc-toggle-control{
+      margin-top:20px;
+    }
+    .grohe-card-26507000 .gc-toggle-label{
+      display:block;
+      margin:0;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:16px;
+      line-height:normal;
+      color:#6c7681;
+      cursor:pointer;
+      user-select:none;
+    }
+    #gc-product-toggle:not(:checked) ~ .gc-toggle-section .gc-toggle-control .gc-toggle-label--deszczownica,
+    #gc-product-toggle:checked ~ .gc-toggle-section .gc-toggle-control .gc-toggle-label--sluchawka{
+      color:#ffffff;
+    }
+    .grohe-card-26507000 .gc-toggle-switch{
+      position:relative;
+      display:block;
+      width:64px;
+      height:24px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+    .grohe-card-26507000 .gc-toggle-track{
+      position:absolute;
+      inset:0;
+      background:#ffffff;
+      border-radius:12px;
+    }
+    .grohe-card-26507000 .gc-toggle-indicator{
+      position:absolute;
+      top:1px;
+      left:2px;
+      width:29px;
+      height:22px;
+      border-radius:11px;
+      background:#0f2b4b;
+      box-shadow:0 1px 3px rgba(0,0,0,0.5);
+      transition:transform 0.2s ease;
+    }
+    #gc-product-toggle:checked ~ .gc-toggle-section .gc-toggle-control .gc-toggle-indicator{
+      transform:translateX(29px);
+    }
+
+    /* ---- Mobile breakpoint: matches Figma "Card / Mobile / 270" structure ---- */
+    @media (max-width:600px){
+      .grohe-card-26507000 .gc-header{
+        display:flex;
+      }
+      .grohe-card-26507000 .gc-hero .gc-logo--overlay{
+        display:none;
+      }
+      .grohe-card-26507000 .gc-hero{
+        aspect-ratio:270/418;
+      }
+      .grohe-card-26507000 .gc-content{
+        padding:32px 16px;
+      }
+      .grohe-card-26507000 .gc-headline,
+      .grohe-card-26507000 .gc-body{
+        max-width:238px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .grohe-card-26507000 .gc-feature-tabs{
+        flex-direction:column;
+        padding:32px 16px;
+      }
+      .grohe-card-26507000 .gc-feature-images{
+        padding:32px 16px;
+      }
+      .grohe-card-26507000 .gc-feature-image{
+        height:auto;
+        aspect-ratio:600/400;
+      }
+      .grohe-card-26507000 .gc-states{
+        padding:32px 16px;
+      }
+      .grohe-card-26507000 .gc-states-captions{
+        position:static;
+        display:flex;
+        flex-direction:column;
+        gap:16px;
+        min-height:0;
+        margin-bottom:16px;
+      }
+      .grohe-card-26507000 .gc-state-caption{
+        position:static;
+        width:100%;
+        text-align:center;
+      }
+
+      /* Product toggle: conservative mobile fallback - no real Figma mockup exists,
+         so annotations are stacked in normal flow instead of absolutely positioned. */
+      .grohe-card-26507000 .gc-toggle-section{
+        padding:32px 16px;
+      }
+      .grohe-card-26507000 .gc-toggle-panel{
+        width:100% !important;
+        height:auto !important;
+        display:none;
+        flex-direction:column;
+        align-items:center;
+        gap:16px;
+        text-align:center;
+      }
+      #gc-product-toggle:not(:checked) ~ .gc-toggle-section .gc-toggle-stage .gc-toggle-panel--deszczownica,
+      #gc-product-toggle:checked ~ .gc-toggle-section .gc-toggle-stage .gc-toggle-panel--sluchawka{
+        display:flex;
+      }
+      .grohe-card-26507000 .gc-toggle-render{
+        position:static !important;
+        width:70% !important;
+        max-width:220px;
+        height:auto !important;
+        margin:0 auto;
+      }
+      .grohe-card-26507000 .gc-toggle-render img{
+        width:100%;
+        height:auto;
+      }
+      .grohe-card-26507000 .gc-annotation-head,
+      .grohe-card-26507000 .gc-annotation-body{
+        position:static !important;
+        white-space:normal;
+        max-width:280px;
+        margin:0 auto;
+      }
+      .grohe-card-26507000 .gc-leader{
+        display:none;
+      }
+    }
+
+    /* ---- YouTube video section ----
+       Per Figma dev-notes: full-width, no padding, no headline/caption/background.
+       Responsive implementation, no dedicated mobile mockup in Figma —
+       fluid aspect-ratio box works identically at every breakpoint, no media query needed. */
+    .grohe-card-26507000 .gc-video-section{
+      padding:0;
+    }
+    .grohe-card-26507000 .gc-video-container{
+      position:relative;
+      width:100%;
+      aspect-ratio:16/9;
+    }
+    .grohe-card-26507000 .gc-video-container iframe{
+      position:absolute;
+      inset:0;
+      display:block;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+
+    /* ---- Numbered feature callouts on tall product render ----
+       Interactive: clicking a numbered item highlights its marker (left + right)
+       in cyan and dims the other 4 to 30% opacity. CSS-only radio switcher,
+       matching the exact colors/opacity found in Figma's raw marker assets
+       (see interactive-state rules further below). */
+    .grohe-card-26507000 .gc-callouts-section{
+      padding:64px 0 0;
+    }
+    .grohe-card-26507000 .gc-callouts-panel{
+      position:relative;
+      width:634px;
+      height:668px;
+      margin:0 auto;
+    }
+    .grohe-card-26507000 .gc-callouts-headline{
+      position:absolute;
+      left:153.93px;
+      top:0;
+      margin:0;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:20px;
+      line-height:normal;
+      color:#ffffff;
+      white-space:nowrap;
+    }
+    .grohe-card-26507000 .gc-callouts-render{
+      position:absolute;
+      left:404px;
+      top:31px;
+      width:230px;
+      height:637px;
+      overflow:hidden;
+    }
+    .grohe-card-26507000 .gc-callouts-render img{
+      position:absolute;
+      display:block;
+      left:0;
+      top:-15px;
+      width:222px;
+      height:729px;
+    }
+    .grohe-card-26507000 .gc-callout{
+      position:absolute;
+      left:0;
+    }
+    .grohe-card-26507000 .gc-callout--1{ top:79px; width:609px; height:76px; }
+    .grohe-card-26507000 .gc-callout--2{ top:136px; width:520px; height:117px; }
+    .grohe-card-26507000 .gc-callout--3{ top:275px; width:454px; height:76px; }
+    .grohe-card-26507000 .gc-callout--4{ top:373px; width:454px; height:146px; }
+    .grohe-card-26507000 .gc-callout--5{ top:471px; width:601px; height:148px; }
+    .grohe-card-26507000 .gc-callout{
+      cursor:pointer;
+    }
+    .grohe-card-26507000 input.style-off[type="radio"]{
+      position:absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+
+    .grohe-card-26507000 .gc-callout-marker{
+      position:absolute;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:32px;
+      height:32px;
+      border-radius:4px;
+      background:#748aa3;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:20px;
+      line-height:normal;
+      color:#ffffff;
+      transition:background-color 0.15s ease;
+    }
+    .grohe-card-26507000 .gc-callout-marker--left{ left:0; top:0; }
+    .grohe-card-26507000 .gc-callout--1 .gc-callout-marker--right{ left:577px; top:16px; }
+    .grohe-card-26507000 .gc-callout--2 .gc-callout-marker--right{ left:488px; top:0; }
+    .grohe-card-26507000 .gc-callout--2 .gc-callout-marker--left{ top:41px; }
+    .grohe-card-26507000 .gc-callout--3 .gc-callout-marker--right{ left:422px; top:27px; }
+    .grohe-card-26507000 .gc-callout--4 .gc-callout-marker--right{ left:422px; top:114px; }
+    .grohe-card-26507000 .gc-callout--5 .gc-callout-marker--right{ left:569px; top:116px; }
+
+    .grohe-card-26507000 .gc-callout-text{
+      position:absolute;
+      left:48px;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:16px;
+      line-height:normal;
+      color:#ffffff;
+      opacity:1;
+      transition:opacity 0.15s ease;
+    }
+    .grohe-card-26507000 .gc-callout--1 .gc-callout-text,
+    .grohe-card-26507000 .gc-callout--3 .gc-callout-text,
+    .grohe-card-26507000 .gc-callout--4 .gc-callout-text,
+    .grohe-card-26507000 .gc-callout--5 .gc-callout-text{ top:6px; }
+    .grohe-card-26507000 .gc-callout--2 .gc-callout-text{ top:47px; }
+    .grohe-card-26507000 .gc-callout-title{
+      margin:0 0 8px;
+      text-transform:uppercase;
+    }
+    .grohe-card-26507000 .gc-callout-desc{
+      margin:0;
+    }
+
+    /* Interactive states, verified against Figma's raw marker assets:
+       - default (no item selected yet): marker bg #748AA3, full opacity — set above as the base style
+       - active (selected item): marker bg #4ABFF1, full opacity
+       - inactive (a different item is selected): marker bg #FFFFFF at 30% opacity (baked into the
+         background color itself, not element opacity, so the white digit text stays fully opaque
+         and legible instead of fading to the same white as its own box) */
+    .grohe-card-26507000 #gc-detail-1:checked ~ .gc-callouts-panel .gc-callout-marker,
+    .grohe-card-26507000 #gc-detail-2:checked ~ .gc-callouts-panel .gc-callout-marker,
+    .grohe-card-26507000 #gc-detail-3:checked ~ .gc-callouts-panel .gc-callout-marker,
+    .grohe-card-26507000 #gc-detail-4:checked ~ .gc-callouts-panel .gc-callout-marker,
+    .grohe-card-26507000 #gc-detail-5:checked ~ .gc-callouts-panel .gc-callout-marker{
+      background:rgba(255,255,255,0.3);
+    }
+    .grohe-card-26507000 #gc-detail-1:checked ~ .gc-callouts-panel .gc-callout-text,
+    .grohe-card-26507000 #gc-detail-2:checked ~ .gc-callouts-panel .gc-callout-text,
+    .grohe-card-26507000 #gc-detail-3:checked ~ .gc-callouts-panel .gc-callout-text,
+    .grohe-card-26507000 #gc-detail-4:checked ~ .gc-callouts-panel .gc-callout-text,
+    .grohe-card-26507000 #gc-detail-5:checked ~ .gc-callouts-panel .gc-callout-text{
+      opacity:0.3;
+    }
+    .grohe-card-26507000 #gc-detail-1:checked ~ .gc-callouts-panel .gc-callout--1 .gc-callout-marker,
+    .grohe-card-26507000 #gc-detail-2:checked ~ .gc-callouts-panel .gc-callout--2 .gc-callout-marker,
+    .grohe-card-26507000 #gc-detail-3:checked ~ .gc-callouts-panel .gc-callout--3 .gc-callout-marker,
+    .grohe-card-26507000 #gc-detail-4:checked ~ .gc-callouts-panel .gc-callout--4 .gc-callout-marker,
+    .grohe-card-26507000 #gc-detail-5:checked ~ .gc-callouts-panel .gc-callout--5 .gc-callout-marker{
+      background:#4abff1;
+    }
+    .grohe-card-26507000 #gc-detail-1:checked ~ .gc-callouts-panel .gc-callout--1 .gc-callout-text,
+    .grohe-card-26507000 #gc-detail-2:checked ~ .gc-callouts-panel .gc-callout--2 .gc-callout-text,
+    .grohe-card-26507000 #gc-detail-3:checked ~ .gc-callouts-panel .gc-callout--3 .gc-callout-text,
+    .grohe-card-26507000 #gc-detail-4:checked ~ .gc-callouts-panel .gc-callout--4 .gc-callout-text,
+    .grohe-card-26507000 #gc-detail-5:checked ~ .gc-callouts-panel .gc-callout--5 .gc-callout-text{
+      opacity:1;
+    }
+
+    /* Callouts: conservative mobile fallback - no real Figma mockup exists,
+       so the absolutely-positioned layout collapses into a simple stacked list. */
+    @media (max-width:600px){
+      .grohe-card-26507000 .gc-callouts-section{
+        padding:32px 16px 0;
+      }
+      .grohe-card-26507000 .gc-callouts-panel{
+        width:100%;
+        height:auto;
+      }
+      .grohe-card-26507000 .gc-callouts-headline{
+        position:static;
+        display:block;
+        white-space:normal;
+        text-align:center;
+        font-size:18px;
+        margin-bottom:16px;
+      }
+      .grohe-card-26507000 .gc-callouts-render{
+        position:static;
+        width:60%;
+        max-width:180px;
+        height:auto;
+        aspect-ratio:222/729;
+        margin:0 auto 24px;
+      }
+      .grohe-card-26507000 .gc-callouts-render img{
+        position:static;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+      }
+      .grohe-card-26507000 .gc-callout{
+        position:static !important;
+        width:100% !important;
+        height:auto !important;
+        display:flex;
+        align-items:flex-start;
+        gap:12px;
+        margin-bottom:20px;
+      }
+      .grohe-card-26507000 .gc-callout-marker--right{
+        display:none;
+      }
+      .grohe-card-26507000 .gc-callout-marker--left{
+        position:static;
+        flex:0 0 auto;
+      }
+      .grohe-card-26507000 .gc-callout-text{
+        position:static;
+        text-align:left;
+      }
+    }
+
+    /* ---- Section A: full-width static lifestyle banner ---- */
+    .grohe-card-26507000 .gc-banner-a{
+      position:relative;
+      width:100%;
+      aspect-ratio:808/449;
+      overflow:hidden;
+    }
+    .grohe-card-26507000 .gc-banner-a img{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    /* ---- Section C: full-width static lifestyle banner (with vertical padding) ---- */
+    .grohe-card-26507000 .gc-banner-c-section{
+      padding:64px 0;
+    }
+    .grohe-card-26507000 .gc-banner-c{
+      position:relative;
+      width:100%;
+      aspect-ratio:808/453;
+      overflow:hidden;
+    }
+    .grohe-card-26507000 .gc-banner-c img{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    /* ---- Section D: 3-column feature/icon grid (static, no interactivity) ----
+       Node 37:1712 skipped as redundant duplicate of 37:1610 (same 9 features,
+       raw pre-cleanup XD layer names). Implemented from 37:1610 only. */
+    .grohe-card-26507000 .gc-tech-section{
+      padding:64px 0;
+    }
+    .grohe-card-26507000 .gc-tech-content{
+      max-width:596px;
+      margin:0 auto;
+      text-align:center;
+      font-family:'Nunito', Arial, sans-serif;
+      color:#ffffff;
+    }
+    .grohe-card-26507000 .gc-tech-eyebrow{
+      margin:0 0 8px;
+      font-weight:400;
+      font-size:20px;
+      line-height:normal;
+    }
+    .grohe-card-26507000 .gc-tech-headline{
+      margin:0 0 44px;
+      font-weight:400;
+      font-size:20px;
+      line-height:normal;
+    }
+    .grohe-card-26507000 .gc-tech-columns{
+      display:flex;
+      align-items:flex-start;
+    }
+    .grohe-card-26507000 .gc-tech-column{
+      position:relative;
+      flex:1 1 0;
+      padding:0 16px;
+      opacity:1;
+      transition:opacity 0.2s ease;
+    }
+    /* Hover-only desktop interaction: hovering the group dims all columns,
+       hovering a specific column brings just that one back to full opacity.
+       Scoped to real-hover pointers so touch devices never get a stuck hover state. */
+    @media (hover:hover) and (pointer:fine){
+      .grohe-card-26507000 .gc-tech-columns:hover .gc-tech-column{
+        opacity:0.45;
+      }
+      .grohe-card-26507000 .gc-tech-columns:hover .gc-tech-column:hover{
+        opacity:1;
+      }
+    }
+    .grohe-card-26507000 .gc-tech-column + .gc-tech-column::before{
+      content:'';
+      position:absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      width:1px;
+      background:#3784c4;
+    }
+    .grohe-card-26507000 .gc-tech-column-title{
+      margin:0 0 24px;
+      font-weight:400;
+      font-size:16px;
+      line-height:normal;
+      letter-spacing:0.5px;
+      text-transform:uppercase;
+    }
+    .grohe-card-26507000 .gc-tech-feature{
+      margin:0 0 32px;
+    }
+    .grohe-card-26507000 .gc-tech-feature:last-child{
+      margin-bottom:0;
+    }
+    .grohe-card-26507000 .gc-tech-icon{
+      width:128px;
+      height:128px;
+      margin:0 auto 12px;
+      border-radius:16px;
+      overflow:hidden;
+    }
+    .grohe-card-26507000 .gc-tech-icon img{
+      display:block;
+      width:100%;
+      height:100%;
+    }
+    .grohe-card-26507000 .gc-tech-feature-name{
+      margin:0 0 8px;
+      font-weight:400;
+      font-size:16px;
+      line-height:normal;
+    }
+    .grohe-card-26507000 .gc-tech-feature-desc{
+      margin:0;
+      font-weight:400;
+      font-size:16px;
+      line-height:normal;
+      min-height:65px;
+    }
+
+    @media (max-width:600px){
+      .grohe-card-26507000 .gc-tech-section{
+        padding:32px 16px;
+      }
+      .grohe-card-26507000 .gc-tech-columns{
+        flex-direction:column;
+        gap:32px;
+      }
+      .grohe-card-26507000 .gc-tech-column{
+        padding:0;
+      }
+      .grohe-card-26507000 .gc-tech-column + .gc-tech-column::before{
+        left:20%;
+        right:20%;
+        top:0;
+        bottom:auto;
+        width:auto;
+        height:1px;
+        transform:translateY(-16px);
+      }
+      .grohe-card-26507000 .gc-tech-icon{
+        width:96px;
+        height:96px;
+      }
+      .grohe-card-26507000 .gc-tech-feature-desc{
+        min-height:auto;
+      }
+    }
+
+    /* ---- Section E: closing footer (static) ---- */
+    .grohe-card-26507000 .gc-footer-section{
+      padding:64px 0;
+    }
+    .grohe-card-26507000 .gc-footer-content{
+      max-width:808px;
+      margin:0 auto;
+      text-align:center;
+      font-family:'Nunito', Arial, sans-serif;
+      color:#ffffff;
+    }
+    .grohe-card-26507000 .gc-footer-headline{
+      margin:0 0 42px;
+      font-weight:400;
+      font-size:20px;
+      line-height:normal;
+    }
+    .grohe-card-26507000 .gc-footer-image{
+      position:relative;
+      margin:0 0 44px;
+    }
+    .grohe-card-26507000 .gc-footer-image img{
+      display:block;
+      width:100%;
+      height:auto;
+    }
+    .grohe-card-26507000 .gc-footer-features{
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:24px;
+      display:flex;
+      margin:0;
+      padding:0 16px;
+    }
+    .grohe-card-26507000 .gc-footer-feature{
+      flex:1 1 0;
+      margin:0;
+      font-weight:400;
+      font-size:16px;
+      line-height:normal;
+      text-transform:uppercase;
+      text-align:center;
+      text-shadow:0 1px 4px rgba(0,0,0,0.45);
+    }
+    .grohe-card-26507000 .gc-footer-logo{
+      display:block;
+      width:242.929px;
+      height:94.273px;
+      margin:0 auto;
+    }
+    @media (max-width:600px){
+      .grohe-card-26507000 .gc-footer-section{
+        padding:32px 16px;
+      }
+      .grohe-card-26507000 .gc-footer-headline{
+        font-size:18px;
+        margin-bottom:24px;
+      }
+      .grohe-card-26507000 .gc-footer-image{
+        margin-bottom:24px;
+      }
+      .grohe-card-26507000 .gc-footer-features{
+        bottom:8px;
+        padding:0 6px;
+      }
+      .grohe-card-26507000 .gc-footer-feature{
+        font-size:11px;
+      }
+      .grohe-card-26507000 .gc-footer-logo{
+        width:170px;
+        height:auto;
+      }
+    }
+
+    /* ---- Section B: interactive safety-technology feature switcher ----
+       3-way CSS-only radio switcher. Default checked: TurboStat (matches Figma's
+       "(Default)" label). Active item moves to the top slot (flex order) at full
+       opacity; the other two stay in their authored order at 40% opacity, matching
+       the mechanic explicitly shown in Figma's "turbostat-active" state.
+       ASSUMPTION: the safestop-active state was extrapolated because Figma did not
+       include a dedicated exported state for it, but the interaction pattern is
+       identical to the two states that were exported (turbostat-active / cooltouch-active). */
+    .grohe-card-26507000 input.style-off[type="radio"]{
+      position:absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+    .grohe-card-26507000 .gc-safety-section{
+      padding:64px 0;
+    }
+    .grohe-card-26507000 .gc-safety-content{
+      position:relative;
+      max-width:726px;
+      margin:0 auto;
+    }
+    .grohe-card-26507000 .gc-safety-headline{
+      margin:0 0 32px;
+      padding-left:105.73px;
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:20px;
+      line-height:normal;
+      color:#ffffff;
+      white-space:nowrap;
+    }
+    .grohe-card-26507000 .gc-safety-body{
+      display:flex;
+      align-items:flex-start;
+      gap:48px;
+    }
+    .grohe-card-26507000 .gc-safety-render{
+      flex:0 0 320px;
+      width:320px;
+      height:459.5px;
+      overflow:hidden;
+    }
+    .grohe-card-26507000 .gc-safety-render img{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .grohe-card-26507000 .gc-safety-features{
+      flex:1 1 auto;
+      display:flex;
+      flex-direction:column;
+      gap:76px;
+    }
+    .grohe-card-26507000 .gc-safety-feature{
+      display:flex;
+      align-items:flex-start;
+      gap:32px;
+      opacity:0.4;
+      cursor:pointer;
+      transition:opacity 0.15s ease;
+    }
+    .grohe-card-26507000 .gc-safety-icon{
+      flex:0 0 96px;
+      width:96px;
+      height:96px;
+    }
+    .grohe-card-26507000 .gc-safety-icon img{
+      display:block;
+      width:100%;
+      height:100%;
+    }
+    .grohe-card-26507000 .gc-safety-text{
+      font-family:'Nunito', Arial, sans-serif;
+      font-weight:400;
+      font-size:16px;
+      line-height:normal;
+      color:#ffffff;
+    }
+    .grohe-card-26507000 .gc-safety-title{
+      margin:0 0 8px;
+    }
+    .grohe-card-26507000 .gc-safety-desc{
+      margin:0;
+    }
+    .grohe-card-26507000 #gc-safety-turbostat:checked ~ .gc-safety-section .gc-safety-content .gc-safety-feature--turbostat,
+    .grohe-card-26507000 #gc-safety-safestop:checked ~ .gc-safety-section .gc-safety-content .gc-safety-feature--safestop,
+    .grohe-card-26507000 #gc-safety-cooltouch:checked ~ .gc-safety-section .gc-safety-content .gc-safety-feature--cooltouch{
+      opacity:1;
+    }
+
+    @media (max-width:600px){
+      .grohe-card-26507000 .gc-safety-section{
+        padding:32px 16px;
+      }
+      .grohe-card-26507000 .gc-safety-headline{
+        padding-left:0;
+        text-align:center;
+        white-space:normal;
+        font-size:18px;
+      }
+      .grohe-card-26507000 .gc-safety-body{
+        flex-direction:column;
+        align-items:center;
+        gap:24px;
+      }
+      .grohe-card-26507000 .gc-safety-render{
+        flex:0 0 auto;
+        width:70%;
+        max-width:220px;
+        height:auto;
+        aspect-ratio:320/439;
+      }
+      .grohe-card-26507000 .gc-safety-features{
+        width:100%;
+        gap:20px;
+      }
+    }
+  </style>
+
+  <div class="gc-card">
+
+    <div class="gc-header">
+      <div class="gc-logo">
+        <img src="img/logo-grohe.svg" alt="GROHE - Pure Freude an Wasser" width="128.843" height="50">
+      </div>
+    </div>
+
+    <div class="gc-hero">
+      <picture>
+        <source media="(max-width:600px)" srcset="img/hero-mobile.png">
+        <img class="gc-hero__img" src="img/hero-desktop.png" alt="GROHE SmartControl - prysznic">
+      </picture>
+      <div class="gc-logo gc-logo--overlay">
+        <img src="img/logo-grohe.svg" alt="GROHE - Pure Freude an Wasser" width="242.929" height="94.273">
+      </div>
+    </div>
+
+    <div class="gc-content">
+      <h2 class="gc-headline">WCIŚNIJ, PRZEKRĘĆ I POCZUJ RÓŻNICĘ</h2>
+      <p class="gc-body">Pełna kontrola w Twoich rękach – system SmartControl zapewnia intuicyjną obsługę, która odmieni Twoją kąpiel. Czas na Twój ruch!</p>
+    </div>
+
+    <input type="radio" class="style-off" name="gc-feature-26507000" id="gc-tab-temperatura" checked>
+    <input type="radio" class="style-off" name="gc-feature-26507000" id="gc-tab-strumien">
+    <input type="radio" class="style-off" name="gc-feature-26507000" id="gc-tab-cisnienie">
+
+    <div class="gc-feature-tabs">
+      <label class="gc-feature-tab gc-feature-tab--temperatura" for="gc-tab-temperatura">Regulacja temperatury</label>
+      <label class="gc-feature-tab gc-feature-tab--strumien" for="gc-tab-strumien">Wybór strumienia</label>
+      <label class="gc-feature-tab gc-feature-tab--cisnienie" for="gc-tab-cisnienie">Ustawienie ciśnienia</label>
+    </div>
+
+    <div class="gc-feature-images">
+      <div class="gc-feature-image gc-feature-image--temperatura">
+        <img src="img/product-image-01.png" alt="GROHE SmartControl - regulacja temperatury">
+      </div>
+      <div class="gc-feature-image gc-feature-image--strumien">
+        <img src="img/product-image-02.png" alt="GROHE SmartControl - wybór strumienia">
+      </div>
+      <div class="gc-feature-image gc-feature-image--cisnienie">
+        <img src="img/product-image-03.png" alt="GROHE SmartControl - ustawienie ciśnienia">
+      </div>
+    </div>
+
+    <input type="radio" class="style-off" name="gc-states-26507000" id="gc-state-neutral" checked>
+    <input type="radio" class="style-off" name="gc-states-26507000" id="gc-state-handshower">
+    <input type="radio" class="style-off" name="gc-states-26507000" id="gc-state-rainshower">
+
+    <div class="gc-states">
+      <div class="gc-states-stage">
+        <div class="gc-states-captions">
+          <label class="gc-state-caption gc-state-caption--handshower" for="gc-state-handshower">Wciśnij, żeby skorzystać<br>ze słuchawki prysznicowej.</label>
+          <label class="gc-state-caption gc-state-caption--rainshower" for="gc-state-rainshower">Wciśnij, żeby skorzystać z jednego<br>z 2 strumieni deszczownicy.</label>
+        </div>
+        <div class="gc-states-images">
+          <img class="gc-state-image gc-state-image--neutral" src="img/product-panel-neutral.png" alt="Panel sterowania GROHE SmartControl">
+          <img class="gc-state-image gc-state-image--handshower" src="img/product-panel-handshower-active.png" alt="Panel sterowania - aktywna słuchawka prysznicowa">
+          <img class="gc-state-image gc-state-image--rainshower" src="img/product-panel-rainshower-active.png" alt="Panel sterowania - aktywne 2 strumienie deszczownicy">
+        </div>
+      </div>
+    </div>
+
+    <input type="checkbox" class="style-off" id="gc-product-toggle">
+
+    <div class="gc-toggle-section">
+      <div class="gc-toggle-stage">
+
+        <div class="gc-toggle-panel gc-toggle-panel--deszczownica">
+          <div class="gc-toggle-render">
+            <img src="img/render-deszczownica.png" alt="GROHE deszczownica - prysznic górny">
           </div>
-          <p class="[word-break:break-word] absolute inset-[37.37%_33.21%_62.29%_33.29%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:170">
-            DETALE, KTÓRE MAJĄ ZNACZENIE
-          </p>
-          <div class="absolute contents inset-[37.83%_18.7%_52.59%_58.3%]" data-node-id="3:176">
-            <div class="absolute contents inset-[38.06%_19.5%_50.98%_58.3%]" data-node-id="3:171">
-              <div class="absolute contents inset-[38.06%_19.5%_50.98%_58.3%]" data-node-id="3:172">
-                <div class="absolute inset-[38.06%_19.5%_50.98%_58.3%] rounded-md overflow-hidden" data-node-id="3:173">
-                  <div class="absolute inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" class="absolute left-0 max-w-none size-full top-0 object-cover" src="imgGroheKvV13.png" />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="gc-annotation gc-annotation--stream-types-d">
+            <p class="gc-annotation-head">Dwa rodzaje strumienia:</p>
+            <p class="gc-annotation-body">• otulający PureRain<br>• orzeźwiający ActiveRain</p>
+            <svg class="gc-leader" viewBox="0 0 166.479 32.5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M166.479 31.5H1V0" stroke="#ffffff" stroke-width="2"/></svg>
           </div>
-          <div id="detail-item-5" class="absolute contents inset-[44.45%_22%_53.33%_17.9%] cursor-pointer transition-opacity duration-200" onclick="highlightDetail(5)" data-node-id="3:177">
-            <div class="absolute contents inset-[46.19%_22%_53.33%_74.8%]" data-node-id="3:178">
-              <div id="detail-badge-5" class="hover-lift absolute inset-[46.19%_22%_53.33%_74.8%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:179" data-interactive tabindex="0" role="button" aria-label="Nieskręcający się wąż" onclick="highlightDetail(5)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(5);}"></div>
-              <p class="[word-break:break-word] absolute inset-[46.23%_22.96%_53.42%_75.84%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:180">
-                5
-              </p>
-            </div>
-            <div
-              class="[word-break:break-word] absolute contents inset-[44.54%_50.2%_54.11%_22.7%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:185"
-            >
-              <p class="absolute inset-[44.54%_56.9%_55.19%_22.7%]" data-node-id="3:181">
-                NIESKRĘCAJĄCY SIĘ WĄŻ
-              </p>
-              <p class="absolute inset-[44.9%_53.5%_54.83%_22.7%]" data-node-id="3:182">Technologia TwistStop zapobiega </p>
-              <p class="absolute inset-[45.26%_50.8%_54.47%_22.7%]" data-node-id="3:183">skręcaniu się węża, zwiększając jego </p>
-              <p class="absolute inset-[45.62%_50.2%_54.11%_22.7%]" data-node-id="3:184">
-                trwałość i poprawiając wygodę użycia.
-              </p>
-            </div>
-            <div class="absolute contents inset-[44.45%_78.9%_55.07%_17.9%]" data-node-id="3:186">
-              <div class="absolute inset-[44.45%_78.9%_55.07%_17.9%] rounded-lg bg-[#748AA3]" data-node-id="3:187"></div>
-              <div class="[word-break:break-word] absolute flex flex-col inset-[44.49%_79.86%_55.16%_18.94%] justify-center leading-[0] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:188">
-                <p class="leading-[normal]">5</p>
-              </div>
-            </div>
+          <div class="gc-annotation gc-annotation--size">
+            <p class="gc-annotation-body">Duża,<br>31 cm średnica</p>
+            <svg class="gc-leader" viewBox="0 0 169.608 32.5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 31.5H168.608V0" stroke="#ffffff" stroke-width="2"/></svg>
           </div>
-          <div id="detail-item-4" class="absolute contents inset-[42.97%_36.7%_54.83%_17.9%] cursor-pointer transition-opacity duration-200" onclick="highlightDetail(4)" data-node-id="3:189">
-            <div class="absolute contents inset-[44.69%_36.7%_54.83%_60.1%]" data-node-id="3:190">
-              <div id="detail-badge-4" class="hover-lift absolute inset-[44.69%_36.7%_54.83%_60.1%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:191" data-interactive tabindex="0" role="button" aria-label="Radełkowane pokrętła" onclick="highlightDetail(4)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(4);}"></div>
-              <p class="[word-break:break-word] absolute inset-[44.73%_37.66%_54.92%_61.14%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:192">
-                4
-              </p>
-            </div>
-            <div
-              class="[word-break:break-word] absolute contents inset-[43.06%_48.9%_55.94%_22.7%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:196"
-            >
-              <p class="absolute inset-[43.06%_55.9%_56.67%_22.7%]" data-node-id="3:193">
-                RADEŁKOWANE POKRĘTŁA
-              </p>
-              <p class="absolute inset-[43.42%_48.9%_56.31%_22.7%]" data-node-id="3:194">Żłobiona powierzchnia gwarantuje łatwą </p>
-              <p class="absolute inset-[43.78%_49.7%_55.94%_22.7%]" data-node-id="3:195">
-                obsługę, nawet z namydlonymi rękami.
-              </p>
-            </div>
-            <div class="absolute contents inset-[42.97%_78.9%_56.55%_17.9%]" data-node-id="3:197">
-              <div class="absolute inset-[42.97%_78.9%_56.55%_17.9%] rounded-lg bg-[#748AA3]" data-node-id="3:198"></div>
-              <p class="[word-break:break-word] absolute inset-[43.02%_79.86%_56.64%_18.94%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:199">
-                4
-              </p>
-            </div>
+          <div class="gc-annotation gc-annotation--pressure">
+            <p class="gc-annotation-body">Równe ciśnienie<br>w każdej dyszy<br>zapewniające<br>wysoki komfort<br>kąpieli</p>
+            <svg class="gc-leader" viewBox="0 0 164.124 32.5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 31.5H163.124V0" stroke="#ffffff" stroke-width="2"/></svg>
           </div>
-          <div id="detail-item-3" class="absolute contents inset-[41.5%_36.7%_57.42%_17.9%] cursor-pointer transition-opacity duration-200" onclick="highlightDetail(3)" data-node-id="3:200">
-            <div class="absolute contents inset-[41.91%_36.7%_57.61%_60.1%]" data-node-id="3:201">
-              <div id="detail-badge-3" class="hover-lift absolute inset-[41.91%_36.7%_57.61%_60.1%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:202" data-interactive tabindex="0" role="button" aria-label="Regulowany chwyt" onclick="highlightDetail(3)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(3);}"></div>
-              <p class="[word-break:break-word] absolute inset-[41.95%_37.66%_57.7%_61.14%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:203">
-                3
-              </p>
-            </div>
-            <div
-              class="[word-break:break-word] absolute contents inset-[41.59%_48.3%_57.42%_22.7%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:207"
-            >
-              <p class="absolute inset-[41.59%_59.5%_58.14%_22.7%]" data-node-id="3:204">
-                REGULOWANY CHWYT
-              </p>
-              <p class="absolute inset-[41.95%_48.3%_57.78%_22.7%]" data-node-id="3:205">Ułatwia wygodne przesuwanie słuchawki </p>
-              <p class="absolute inset-[42.31%_56.2%_57.42%_22.7%]" data-node-id="3:206">
-                i dostosowanie kąta natrysku.
-              </p>
-            </div>
-            <div class="absolute contents inset-[41.5%_78.9%_58.02%_17.9%]" data-node-id="3:208">
-              <div class="absolute inset-[41.5%_78.9%_58.02%_17.9%] rounded-lg bg-[#748AA3]" data-node-id="3:209"></div>
-              <p class="[word-break:break-word] absolute inset-[41.55%_79.86%_58.11%_18.94%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:210">
-                3
-              </p>
-            </div>
+        </div>
+
+        <div class="gc-toggle-panel gc-toggle-panel--sluchawka">
+          <div class="gc-toggle-render">
+            <img src="img/render-sluchawka.png" alt="GROHE słuchawka prysznicowa">
           </div>
-          <div id="detail-item-1" class="absolute contents inset-[38.55%_21.2%_60.36%_17.9%] cursor-pointer transition-opacity duration-200" onclick="highlightDetail(1)" data-node-id="3:211">
-            <div
-              class="[word-break:break-word] absolute contents inset-[38.64%_45.6%_60.36%_22.7%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:215"
-            >
-              <p class="absolute inset-[38.64%_62.7%_61.09%_22.7%]" data-node-id="3:212">
-                OBFITY STRUMIEŃ
-              </p>
-              <p class="absolute inset-[39%_45.6%_60.72%_22.7%]" data-node-id="3:213">Technologia GROHE DreamSpray utrzymuje </p>
-              <p class="absolute inset-[39.37%_48.1%_60.36%_22.7%]" data-node-id="3:214">
-                równe ciśnienie w każdej dyszy natrysku.
-              </p>
-            </div>
-            <div class="absolute contents inset-[38.79%_21.2%_60.72%_75.6%]" data-node-id="3:216">
-              <div id="detail-badge-1" class="hover-lift absolute inset-[38.79%_21.2%_60.72%_75.6%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:217" data-interactive tabindex="0" role="button" aria-label="Obfity strumień" onclick="highlightDetail(1)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(1);}"></div>
-              <p class="[word-break:break-word] absolute inset-[38.84%_22.16%_60.81%_76.64%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:218">
-                1
-              </p>
-            </div>
-            <div class="absolute contents inset-[38.55%_78.9%_60.96%_17.9%]" data-node-id="3:219">
-              <div class="absolute inset-[38.55%_78.9%_60.96%_17.9%] rounded-lg bg-[#748AA3]" data-node-id="3:220"></div>
-              <p class="[word-break:break-word] absolute inset-[38.6%_79.86%_61.06%_18.94%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:221">
-                1
-              </p>
-            </div>
+          <div class="gc-annotation gc-annotation--stream-types-s">
+            <p class="gc-annotation-head">3 rodzaje strumienia:</p>
+            <p class="gc-annotation-body">• delikatny Rain<br>• odprężający Massage<br>• oszczędny SmartRain</p>
+            <svg class="gc-leader" viewBox="0 0 236.706 32.5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M236.706 31.5H1V0" stroke="#ffffff" stroke-width="2"/></svg>
           </div>
-          <p class="[word-break:break-word] absolute inset-[71.95%_31.1%_27.7%_31.2%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:222">
-            POZNAJ INNOWACYJNE ROZWIĄZANIA
-          </p>
-          <p class="[word-break:break-word] absolute inset-[71.4%_27.32%_28.26%_27.38%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:223">
-            SYSTEM EUPHORIA SMARTCONTROL 310 DUO
-          </p>
-          <div class="absolute contents inset-[1.95%_13.15%_90.56%_23.2%]" data-node-id="3:224">
-            <div class="[word-break:break-word] absolute contents inset-[8.81%_23.2%_90.56%_23.2%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:227">
-              <p class="absolute inset-[8.81%_23.2%_90.92%_23.2%]" data-node-id="3:225">Pełna kontrola w Twoich rękach – system SmartControl zapewnia intuicyjną </p>
-              <p class="absolute inset-[9.17%_30.04%_90.56%_30.06%]" data-node-id="3:226">
-                obsługę, która odmieni Twoją kąpiel. Czas na Twój ruch!
-              </p>
-            </div>
-            <p class="[word-break:break-word] absolute inset-[8.01%_24.24%_91.54%_24.36%] leading-[normal] not-italic text-[26px] text-white whitespace-nowrap" data-node-id="3:228">
-              WCIŚNIJ, PRZEKRĘĆ I POCZUJ RÓŻNICĘ
-            </p>
-            <div class="absolute contents inset-[1.95%_13.15%_96.63%_62.55%]" data-node-id="3:229">
-              <div class="absolute inset-[1.95%_13.15%_96.63%_74.58%] bg-[#0F2B4B]" data-node-id="3:230"></div>
-              <div class="absolute inset-[1.95%_13.15%_96.63%_74.58%] border border-white" data-node-id="3:231"></div>
-              <div class="absolute contents inset-[1.95%_13.15%_96.63%_62.55%]" data-node-id="3:232">
-                <div class="absolute contents inset-[1.95%_13.15%_96.63%_62.55%]" data-node-id="3:238">
-                  <div class="absolute inset-[2.31%_14.68%_97.03%_62.55%]" data-node-id="3:233">
-                    <img alt="GROHE" class="absolute block inset-0 max-w-none size-full object-contain" src="imgGroup499.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="gc-annotation gc-annotation--stream-switch">
+            <p class="gc-annotation-body">Obróć, żeby<br>przełączać się między<br>strumieniami</p>
+            <svg class="gc-leader" viewBox="0 0 168.521 32.5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 31.5H167.521V0" stroke="#ffffff" stroke-width="2"/></svg>
           </div>
-          <div id="detail-item-2" class="absolute contents inset-[39.41%_30.1%_58.89%_17.9%] cursor-pointer transition-opacity duration-200" onclick="highlightDetail(2)" data-node-id="3:239">
-            <div class="absolute contents inset-[39.41%_30.1%_60.11%_66.7%]" data-node-id="3:240">
-              <div id="detail-badge-2" class="hover-lift absolute inset-[39.41%_30.1%_60.11%_66.7%] rounded-lg bg-[#748AA3] transition-all duration-200" data-node-id="3:241" data-interactive tabindex="0" role="button" aria-label="Obrotowe ramię" onclick="highlightDetail(2)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightDetail(2);}"></div>
-              <p class="[word-break:break-word] absolute inset-[39.46%_31.06%_60.2%_67.74%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:242">
-                2
-              </p>
-            </div>
-            <div
-              class="[word-break:break-word] absolute contents inset-[40.12%_47.8%_58.89%_22.7%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:246"
-            >
-              <p class="absolute inset-[40.12%_62.2%_59.61%_22.7%]" data-node-id="3:243">
-                OBROTOWE RAMIĘ
-              </p>
-              <p class="absolute inset-[40.48%_47.8%_59.25%_22.7%]" data-node-id="3:244">Pozwala wygodnie ustawić deszczownicę </p>
-              <p class="absolute inset-[40.84%_62.1%_58.89%_22.7%]" data-node-id="3:245">
-                w optymalnej pozycji.
-              </p>
-            </div>
-            <div class="absolute contents inset-[40.03%_78.9%_59.49%_17.9%]" data-node-id="3:247">
-              <div class="absolute inset-[40.03%_78.9%_59.49%_17.9%] rounded-lg bg-[#748AA3]" data-node-id="3:248"></div>
-              <p class="[word-break:break-word] absolute inset-[40.07%_79.86%_59.58%_18.94%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:249">
-                2
-              </p>
-            </div>
+          <div class="gc-annotation gc-annotation--limescale">
+            <p class="gc-annotation-body">Łatwe usuwanie kamienia<br>z silikonowych dysz</p>
+            <svg class="gc-leader" viewBox="0 0 216.2 32.5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 31.5H215.2V0" stroke="#ffffff" stroke-width="2"/></svg>
           </div>
-          <p class="[word-break:break-word] absolute inset-[55.09%_23.73%_44.57%_23.77%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:250">
-            TECHNOLOGIA, KTÓRA ZAPEWNIA BEZPIECZEŃSTWO
-          </p>
-          <img id="safety-photo" src="imgGlowica.jpg" alt="GROHE bezpieczeństwo" style="position:absolute; left:130px; top:3740px; width:310px; height:425px; object-fit:cover; border-radius:8px; transition:opacity 0.2s;">
-          <div id="safety-item-cool" class="absolute bottom-[37.32%] contents left-1/2 right-[14.3%] top-[61.24%] cursor-pointer" onclick="highlightSafety('cool')" data-node-id="3:251">
-            <div class="absolute bottom-[37.32%] contents left-1/2 right-[14.3%] top-[61.24%]" data-node-id="3:252">
-              <div class="[word-break:break-word] absolute contents inset-[61.3%_14.3%_37.35%_62.8%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:257">
-                <p class="absolute inset-[61.3%_14.3%_38.43%_62.8%]" data-node-id="3:253">Technologia GROHE CoolTouch </p>
-                <p class="absolute inset-[61.66%_14.5%_38.07%_62.8%]" data-node-id="3:254">sprawia, że powierzchnia baterii </p>
-                <p class="absolute inset-[62.02%_21.4%_37.71%_62.8%]" data-node-id="3:255">nie nagrzewa się i jest </p>
-                <p class="absolute inset-[62.38%_21.8%_37.35%_62.8%]" data-node-id="3:256">bezpieczna w dotyku. </p>
-              </div>
-              <div id="safety-badge-cool" class="hover-lift absolute bottom-[37.32%] left-1/2 right-[40.4%] top-[61.24%] rounded-2xl transition-all duration-200" data-node-id="3:258" data-interactive tabindex="0" role="button" aria-label="CoolTouch" onclick="highlightSafety('cool')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightSafety('cool');}">
-                <img alt="" class="absolute block inset-0 max-w-none size-full" height="96" src="imgZzhAiCooltouch4C00001.png" width="96" />
-              </div>
-            </div>
+        </div>
+
+      </div>
+
+      <div class="gc-toggle-control">
+        <label class="gc-toggle-label gc-toggle-label--deszczownica" for="gc-product-toggle">DESZCZOWNICA</label>
+        <label class="gc-toggle-switch" for="gc-product-toggle">
+          <span class="gc-toggle-track"></span>
+          <span class="gc-toggle-indicator"></span>
+        </label>
+        <label class="gc-toggle-label gc-toggle-label--sluchawka" for="gc-product-toggle">SŁUCHAWKA</label>
+      </div>
+    </div>
+
+    <div class="gc-video-section">
+      <div class="gc-video-container">
+        <!-- TODO: Replace YouTube video ID with final URL. -->
+        <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_PLACEHOLDER" title="GROHE SmartControl - wideo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <!-- Interactive: state-1-default's markup is used as the base; clicking any item
+         reproduces the exact marker highlight/dim behavior found in the "details" variant
+         (verified against Figma's raw marker asset colors: #4ABFF1 active, white@30% inactive). -->
+    <div class="gc-callouts-section">
+      <input type="radio" class="style-off" name="gc-callouts-26507000" id="gc-detail-1">
+      <input type="radio" class="style-off" name="gc-callouts-26507000" id="gc-detail-2">
+      <input type="radio" class="style-off" name="gc-callouts-26507000" id="gc-detail-3">
+      <input type="radio" class="style-off" name="gc-callouts-26507000" id="gc-detail-4">
+      <input type="radio" class="style-off" name="gc-callouts-26507000" id="gc-detail-5">
+
+      <div class="gc-callouts-panel">
+        <h3 class="gc-callouts-headline">DETALE, KTÓRE MAJĄ ZNACZENIE</h3>
+        <div class="gc-callouts-render">
+          <img src="img/grohe-shower-side-view.png" alt="GROHE - słuchawka prysznicowa, widok z boku">
+        </div>
+
+        <label class="gc-callout gc-callout--1" for="gc-detail-1">
+          <span class="gc-callout-marker gc-callout-marker--left">1</span>
+          <span class="gc-callout-marker gc-callout-marker--right">1</span>
+          <div class="gc-callout-text">
+            <p class="gc-callout-title">Obfity strumień</p>
+            <p class="gc-callout-desc">Technologia GROHE DreamSpray utrzymuje<br>równe ciśnienie w każdej dyszy natrysku.</p>
           </div>
-          <div id="safety-item-turbo" class="absolute bottom-[42.48%] contents left-1/2 right-[14.6%] top-[56.08%] cursor-pointer" onclick="highlightSafety('turbo')" data-node-id="3:259">
-            <div class="[word-break:break-word] absolute contents inset-[56.14%_14.6%_42.51%_62.8%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:264">
-              <p class="absolute inset-[56.14%_17.7%_43.59%_62.8%]" data-node-id="3:260">Głowica GROHE TurboStat </p>
-              <p class="absolute inset-[56.5%_14.6%_43.23%_62.8%]" data-node-id="3:261">utrzymuje wybraną temperaturę </p>
-              <p class="absolute inset-[56.86%_16.6%_42.87%_62.8%]" data-node-id="3:262">wody, niezależnie od skoków </p>
-              <p class="absolute inset-[57.22%_22.3%_42.51%_62.8%]" data-node-id="3:263">ciśnienia w instalacji. </p>
-            </div>
-            <div id="safety-badge-turbo" class="hover-lift absolute bottom-[42.48%] left-1/2 right-[40.4%] top-[56.08%] rounded-2xl transition-all duration-200" data-node-id="3:265" data-interactive tabindex="0" role="button" aria-label="TurboStat" onclick="highlightSafety('turbo')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightSafety('turbo');}">
-              <img alt="" class="absolute block inset-0 max-w-none size-full" height="96" src="imgZzhAiTurbostat4C00001.png" width="96" />
-            </div>
+        </label>
+
+        <label class="gc-callout gc-callout--2" for="gc-detail-2">
+          <span class="gc-callout-marker gc-callout-marker--left">2</span>
+          <span class="gc-callout-marker gc-callout-marker--right">2</span>
+          <div class="gc-callout-text">
+            <p class="gc-callout-title">Obrotowe ramię</p>
+            <p class="gc-callout-desc">Pozwala wygodnie ustawić deszczownicę<br>w optymalnej pozycji.</p>
           </div>
-          <div id="safety-item-safe" class="absolute bottom-[39.85%] contents left-1/2 right-[16.5%] top-[58.71%] cursor-pointer" onclick="highlightSafety('safe')" data-node-id="3:266">
-            <div class="absolute bottom-[39.85%] contents left-1/2 right-[16.5%] top-[58.71%]" data-node-id="3:267">
-              <div class="[word-break:break-word] absolute contents inset-[58.77%_16.5%_39.88%_62.8%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:272">
-                <p class="absolute inset-[58.77%_18%_40.96%_62.8%]" data-node-id="3:268">Blokada GROHE SafeStop </p>
-                <p class="absolute inset-[59.13%_17.7%_40.6%_62.8%]" data-node-id="3:269">zapobiega przypadkowemu </p>
-                <p class="absolute inset-[59.49%_16.5%_40.24%_62.8%]" data-node-id="3:270">włączeniu zbyt gorącej wody, </p>
-                <p class="absolute inset-[59.85%_21.7%_39.88%_62.8%]" data-node-id="3:271">chroniąc Twoją skórę. </p>
-              </div>
-              <div id="safety-badge-safe" class="hover-lift absolute bottom-[39.85%] left-1/2 right-[40.4%] top-[58.71%] rounded-2xl transition-all duration-200" data-node-id="3:273" data-interactive tabindex="0" role="button" aria-label="SafeStop" onclick="highlightSafety('safe')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();highlightSafety('safe');}">
-                <img alt="" class="absolute block inset-0 max-w-none size-full" height="96" src="imgEditZzhFbSafestop3800101.png" width="96" />
-              </div>
-            </div>
+        </label>
+
+        <label class="gc-callout gc-callout--3" for="gc-detail-3">
+          <span class="gc-callout-marker gc-callout-marker--left">3</span>
+          <span class="gc-callout-marker gc-callout-marker--right">3</span>
+          <div class="gc-callout-text">
+            <p class="gc-callout-title">Regulowany chwyt</p>
+            <p class="gc-callout-desc">Ułatwia wygodne przesuwanie słuchawki<br>i dostosowanie kąta natrysku.</p>
           </div>
-          <div class="absolute inset-[73.02%_60.35%_16.29%_39.65%] bg-[#3784C4]" data-node-id="3:274"></div>
-          <div class="absolute inset-[73.02%_39.45%_16.29%_60.55%] bg-[#3784C4]" data-node-id="3:276"></div>
-          <div id="col-safety" class="absolute contents inset-[73%_41.2%_16.32%_41.1%]" data-node-id="3:278">
-            <div class="absolute inset-[73%_41.2%_16.32%_41.1%]" style="cursor:pointer; z-index:1;" onmouseenter="highlightColumn('safety')" onmouseleave="highlightColumn(null)"></div>
-            <div class="[word-break:break-word] absolute contents inset-[76.01%_43.6%_23.42%_43.5%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:281">
-              <p class="absolute inset-[76.01%_44.46%_23.72%_44.34%]" data-node-id="3:279">Zawsze idealna </p>
-              <p class="absolute inset-[76.31%_43.6%_23.42%_43.5%]" data-node-id="3:280">
-                temperatura wody
-              </p>
-            </div>
-            <div class="[word-break:break-word] absolute contents inset-[79.56%_41.2%_19.87%_41.1%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:284">
-              <p class="absolute inset-[79.56%_41.2%_20.17%_41.1%]" data-node-id="3:282">Blokada bezpieczeństwa </p>
-              <p class="absolute inset-[79.86%_45.6%_19.87%_45.5%]" data-node-id="3:283">
-                na uchwycie
-              </p>
-            </div>
-            <div class="[word-break:break-word] absolute contents inset-[83.11%_42.7%_16.32%_42.6%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:287">
-              <p class="absolute inset-[83.11%_42.7%_16.62%_42.6%]" data-node-id="3:285">Nienagrzewający się </p>
-              <p class="absolute inset-[83.41%_47.56%_16.32%_47.54%]" data-node-id="3:286">
-                korpus
-              </p>
-            </div>
-            <p class="[word-break:break-word] absolute inset-[75.65%_46.6%_24.08%_46.4%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:288">
-              TurboStat
-            </p>
-            <p class="[word-break:break-word] absolute inset-[79.2%_46.8%_20.53%_46.6%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:289">
-              SafeStop
-            </p>
-            <p class="[word-break:break-word] absolute inset-[82.74%_46.3%_16.98%_46.1%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:290">
-              CoolTouch
-            </p>
-            <p class="[word-break:break-word] absolute inset-[73%_42.6%_26.72%_42.5%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:291">
-              BEZPIECZEŃSTWO
-            </p>
-            <div class="absolute contents inset-[73.55%_43.7%_24.53%_43.5%]" data-node-id="3:296">
-              <div class="absolute" style="left:433px; width:134px; top:73.52%; height:134px;" data-node-id="3:293">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="133" src="imgZzhAiTurbostat4C3.png" width="133" />
-              </div>
-            </div>
-            <div class="absolute contents inset-[77.09%_43.7%_20.98%_43.5%]" data-node-id="3:301">
-              <div class="absolute" style="left:433px; width:134px; top:77.03%; height:134px;" data-node-id="3:298">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="137" src="imgEditZzhFbSafestop3800102.png" width="137" />
-              </div>
-            </div>
-            <div class="absolute contents inset-[80.64%_43.7%_17.44%_43.5%]" data-node-id="3:306">
-              <div class="absolute" style="left:433px; width:134px; top:80.61%; height:134px;" data-node-id="3:303">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="133" src="imgZzhAiCooltouch4C2.png" width="133" />
-              </div>
-            </div>
+        </label>
+
+        <label class="gc-callout gc-callout--4" for="gc-detail-4">
+          <span class="gc-callout-marker gc-callout-marker--left">4</span>
+          <span class="gc-callout-marker gc-callout-marker--right">4</span>
+          <div class="gc-callout-text">
+            <p class="gc-callout-title">Radełkowane pokrętła</p>
+            <p class="gc-callout-desc">Żłobiona powierzchnia gwarantuje łatwą<br>obsługę, nawet z namydlonymi rękami.</p>
           </div>
-          <div id="col-quality" class="absolute contents inset-[73%_19.3%_16.32%_62.3%]" data-node-id="3:307">
-            <div class="absolute inset-[73%_19.3%_16.32%_62.3%]" style="cursor:pointer; z-index:1;" onmouseenter="highlightColumn('quality')" onmouseleave="highlightColumn(null)"></div>
-            <div
-              class="[word-break:break-word] absolute contents inset-[76.01%_20.2%_23.42%_63.2%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:310"
-            >
-              <p class="absolute inset-[76.01%_23.81%_23.72%_66.79%]" data-node-id="3:308">Trwała, łatwa </p>
-              <p class="absolute inset-[76.31%_20.2%_23.42%_63.2%]" data-node-id="3:309">
-                w czyszczeniu powłoka
-              </p>
-            </div>
-            <div class="[word-break:break-word] absolute contents inset-[79.56%_19.3%_19.87%_62.3%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:313">
-              <p class="absolute inset-[79.56%_19.3%_20.17%_62.3%]" data-node-id="3:311">Łatwe usuwanie kamienia </p>
-              <p class="absolute inset-[79.86%_22.95%_19.87%_65.95%]" data-node-id="3:312">
-                z dysz natrysku
-              </p>
-            </div>
-            <div class="[word-break:break-word] absolute contents inset-[83.11%_23.3%_16.32%_66.4%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:316">
-              <p class="absolute inset-[83.11%_23.3%_16.62%_66.4%]" data-node-id="3:314">5 lat gwarancji </p>
-              <p class="absolute inset-[83.41%_24.39%_16.32%_67.51%]" data-node-id="3:315">
-                producenta
-              </p>
-            </div>
-            <p class="[word-break:break-word] absolute inset-[75.65%_23.3%_24.08%_66.3%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:317">
-              Long-life finish
-            </p>
-            <p class="[word-break:break-word] absolute inset-[79.2%_24%_20.53%_67.1%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:318">
-              SpeedClean
-            </p>
-            <p class="[word-break:break-word] absolute inset-[82.74%_24.6%_16.98%_67.7%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:319">
-              Gwarancja
-            </p>
-            <p class="[word-break:break-word] absolute inset-[73%_25.2%_26.72%_68.3%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:320">
-              JAKOŚĆ
-            </p>
-            <div class="absolute contents inset-[73.55%_22.1%_24.53%_65.1%]" data-node-id="3:325">
-              <div class="absolute" style="left:642px; width:134px; top:73.47%; height:134px;" data-node-id="3:322">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="138" src="imgZzhFbLonglifefinish4C102.png" width="138" />
-              </div>
-            </div>
-            <div class="absolute contents inset-[77.09%_22.1%_20.98%_65.1%]" data-node-id="3:330">
-              <div class="absolute" style="left:642px; width:134px; top:77.02%; height:134px;" data-node-id="3:327">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="138" src="imgZzhFbSpeedclean4C00101.png" width="138" />
-              </div>
-            </div>
-            <div class="absolute contents inset-[80.64%_22.1%_17.44%_65.1%]" data-node-id="3:335">
-              <div class="absolute" style="left:642px; width:134px; top:80.57%; height:134px;" data-node-id="3:331">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="138" src="imgGwarancja.png" width="138" />
-              </div>
-            </div>
+        </label>
+
+        <label class="gc-callout gc-callout--5" for="gc-detail-5">
+          <span class="gc-callout-marker gc-callout-marker--left">5</span>
+          <span class="gc-callout-marker gc-callout-marker--right">5</span>
+          <div class="gc-callout-text">
+            <p class="gc-callout-title">Nieskręcający się wąż</p>
+            <p class="gc-callout-desc">Technologia TwistStop zapobiega<br>skręcaniu się węża, zwiększając jego<br>trwałość i poprawiając wygodę użycia.</p>
           </div>
-          <div class="absolute contents inset-[22.56%_17.53%_71.71%_16.94%]" data-node-id="3:336">
-            <div id="mode-rain" class="absolute contents inset-[22.56%_17.53%_72.94%_16.94%]" data-node-id="3:337">
-              <div class="absolute contents inset-[25.24%_19.24%_73.86%_63.9%]" data-node-id="3:338">
-                <div class="absolute inset-[25.67%_19.24%_73.86%_63.9%]" data-node-id="3:339">
-                  <div class="absolute inset-[0_-0.59%_-3.17%_0]">
-                    <img alt="" class="block max-w-none size-full" src="imgPath414.svg" />
-                  </div>
-                </div>
-                <div
-                  class="[word-break:break-word] absolute contents inset-[25.24%_21.8%_74.13%_67.3%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-                  data-node-id="3:342"
-                >
-                  <p class="absolute inset-[25.24%_28.5%_74.49%_67.3%]" data-node-id="3:340">Duża, </p>
-                  <p class="absolute inset-[25.6%_21.8%_74.13%_67.3%]" data-node-id="3:341">
-                    31 cm średnica
-                  </p>
-                </div>
-              </div>
-              <div class="absolute contents inset-[22.68%_63.97%_75.95%_16.94%]" data-node-id="3:343">
-                <div class="absolute inset-[23.57%_66.52%_75.95%_16.94%]" data-node-id="3:344">
-                  <div class="absolute inset-[0_0_-3.17%_-0.6%]">
-                    <img alt="" class="block max-w-none size-full" src="imgPath415.svg" />
-                  </div>
-                </div>
-                <div
-                  class="[word-break:break-word] absolute contents inset-[22.68%_63.97%_76.24%_18.13%] not-italic text-white whitespace-nowrap"
-                  data-node-id="3:348"
-                >
-                  <p class="absolute inset-[22.68%_64.67%_77.05%_18.13%] leading-[normal] text-[16px]" data-node-id="3:345">Dwa rodzaje strumienia: </p>
-                  <p class="absolute inset-[23.13%_67.77%_76.6%_18.13%] leading-[0] text-[0px]" data-node-id="3:346">
-                    <span class="leading-[normal] text-[10px]">• </span>
-                    <span class="leading-[normal] text-[16px]">otulający PureRain</span>
-                  </p>
-                  <p class="absolute inset-[23.49%_63.97%_76.24%_18.13%] leading-[0] text-[0px]" data-node-id="3:347">
-                    <span class="leading-[normal] text-[10px]">• </span>
-                    <span class="leading-[normal] text-[16px]">orzeźwiający ActiveRain</span>
-                  </p>
-                </div>
-              </div>
-              <div class="absolute contents inset-[22.67%_17.53%_75.43%_66.16%]" data-node-id="3:349">
-                <div
-                  class="[word-break:break-word] absolute contents inset-[22.67%_20.6%_75.62%_67.7%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-                  data-node-id="3:355"
-                >
-                  <p class="absolute inset-[22.67%_20.6%_77.06%_67.7%]" data-node-id="3:350">Równe ciśnienie </p>
-                  <p class="absolute inset-[23.03%_21.5%_76.7%_67.7%]" data-node-id="3:351">w każdej dyszy </p>
-                  <p class="absolute inset-[23.39%_22.5%_76.34%_67.7%]" data-node-id="3:352">zapewniające </p>
-                  <p class="absolute inset-[23.75%_21.7%_75.98%_67.7%]" data-node-id="3:353">wysoki komfort </p>
-                  <p class="absolute inset-[24.11%_27.7%_75.62%_67.7%]" data-node-id="3:354">
-                    kąpieli
-                  </p>
-                </div>
-                <div class="absolute inset-[24.09%_17.53%_75.43%_66.16%]" data-node-id="3:356">
-                  <div class="absolute inset-[0_-0.61%_-3.17%_0]">
-                    <img alt="" class="block max-w-none size-full" src="imgPath416.svg" />
-                  </div>
-                </div>
-              </div>
-              <div class="absolute contents inset-[22.56%_35%_72.94%_35.1%]" data-node-id="3:357">
-                <div class="absolute inset-[22.56%_35%_72.94%_35.1%]" data-node-id="3:358">
-                  <img alt="Deszczownica GROHE" class="absolute block inset-0 max-w-none size-full object-contain" height="299" src="imgZzh26475000000011.png" width="299" />
-                </div>
-              </div>
-            </div>
-            <div id="mode-hand" class="absolute contents hidden">
-              <div class="absolute" style="left:190px; top:1599.4px; width:163px;">
-                <p class="text-[16px] text-white not-italic whitespace-nowrap m-0">3 rodzaje strumienia: </p>
-                <p class="text-[16px] text-white not-italic whitespace-nowrap m-0"><span class="text-[10px]">• </span>delikatny Rain</p>
-                <p class="text-[16px] text-white not-italic whitespace-nowrap m-0"><span class="text-[10px]">• </span>odprężający Massage</p>
-                <p class="text-[16px] text-white not-italic whitespace-nowrap m-0"><span class="text-[10px]">• </span>oszczędny SmartRain</p>
-                <div style="border-bottom:1px solid #fff; width:100%; margin-top:8px;"></div>
-              </div>
-              <div class="absolute" style="left:629.6px; top:1525.8px; width:157px;">
-                <p class="text-[16px] text-white not-italic whitespace-nowrap m-0">Obróć, żeby </p>
-                <p class="text-[16px] text-white not-italic whitespace-nowrap m-0">przełączać się między </p>
-                <p class="text-[16px] text-white not-italic whitespace-nowrap m-0">strumieniami</p>
-                <div style="border-bottom:1px solid #fff; width:100%; margin-top:8px;"></div>
-              </div>
-              <div class="absolute" style="left:558.3px; top:1706.7px; width:184px;">
-                <p class="text-[16px] text-white not-italic whitespace-nowrap m-0">Łatwe usuwanie kamienia </p>
-                <p class="text-[16px] text-white not-italic whitespace-nowrap m-0">z silikonowych dysz</p>
-              </div>
-              <div class="absolute" style="left:436.1px; top:1501px; width:155px; height:310px;">
-                <img alt="Słuchawka GROHE" class="absolute block inset-0 max-w-none size-full object-contain" src="imgSluchawka.png" />
-              </div>
-            </div>
-            <div id="toggle-group" class="absolute contents inset-[27.49%_38.44%_71.71%_37.11%]" data-node-id="3:359">
-              <div class="absolute contents inset-[28.02%_49.89%_71.71%_37.11%] cursor-pointer" data-node-id="3:360" onclick="setShowerMode('rain')">
-                <p id="label-rain" class="[word-break:break-word] absolute inset-[28.02%_49.89%_71.71%_37.11%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap toggle-shiftable" data-node-id="3:361">
-                  DESZCZOWNICA
-                </p>
-              </div>
-              <div class="absolute contents inset-[28.02%_38.44%_71.71%_51.46%] cursor-pointer" data-node-id="3:362" onclick="setShowerMode('hand')">
-                <p id="label-hand" class="[word-break:break-word] absolute inset-[28.02%_38.44%_71.71%_51.46%] leading-[normal] not-italic text-[#6c7681] text-[16px] whitespace-nowrap toggle-shiftable" data-node-id="3:363">
-                  SŁUCHAWKA
-                </p>
-              </div>
-              <div class="absolute inset-[27.49%_47%_72.15%_46.6%] rounded-full bg-white cursor-pointer toggle-shiftable" data-node-id="3:364" onclick="setShowerMode(document.getElementById('mode-rain').classList.contains('hidden') ? 'rain' : 'hand')"></div>
-              <div id="toggle-knob" class="absolute inset-[27.51%_49.9%_72.16%_46.8%] rounded-full bg-[#0F2B4B] transition-all duration-200 toggle-shiftable" data-node-id="3:365"></div>
-            </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="gc-banner-a">
+      <img src="img/grohe-lifestyle-banner-1.png" alt="GROHE - wnętrze łazienki z systemem SmartControl">
+    </div>
+
+    <!-- ASSUMPTION: safestop-active state extrapolated because Figma did not include a
+         dedicated exported state, but the interaction pattern is identical to the two
+         states that were exported (turbostat-active / cooltouch-active). -->
+    <input type="radio" class="style-off" name="gc-safety-26507000" id="gc-safety-turbostat" checked>
+    <input type="radio" class="style-off" name="gc-safety-26507000" id="gc-safety-safestop">
+    <input type="radio" class="style-off" name="gc-safety-26507000" id="gc-safety-cooltouch">
+
+    <div class="gc-safety-section">
+      <div class="gc-safety-content">
+        <h3 class="gc-safety-headline">TECHNOLOGIA, KTÓRA ZAPEWNIA BEZPIECZEŃSTWO</h3>
+        <div class="gc-safety-body">
+          <div class="gc-safety-render">
+            <img src="img/grohe-turbostat-render.png" alt="GROHE - bateria termostatyczna">
           </div>
-          <div class="absolute contents inset-[18.67%_9.6%_78.12%_9.6%]" data-node-id="3:367">
-            <div class="absolute contents inset-[20.47%_29.1%_78.31%_29.1%]" data-node-id="3:368">
-              <div class="absolute inset-[20.47%_29.1%_78.31%_29.1%]" data-node-id="3:369">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-contain" height="81" src="imgZzh2650700000201.png" width="418" />
-                <div id="ring-stream" class="absolute rounded-full pointer-events-none transition-opacity duration-200" style="opacity:0; left:38.16%; top:43.2%; width:9.5%; aspect-ratio:1/1; transform:translate(-50%,-50%); border:2px solid #8CC63F; box-shadow:0 0 6px #8CC63F;"></div>
-                <div id="ring-pressure1" class="absolute rounded-full pointer-events-none transition-opacity duration-200" style="opacity:0; left:60.7%; top:43.2%; width:9.5%; aspect-ratio:1/1; transform:translate(-50%,-50%); border:2px solid #8CC63F; box-shadow:0 0 6px #8CC63F;"></div>
-                <div id="ring-pressure2" class="absolute rounded-full pointer-events-none transition-opacity duration-200" style="opacity:0; left:83.5%; top:43.2%; width:9.5%; aspect-ratio:1/1; transform:translate(-50%,-50%); border:2px solid #8CC63F; box-shadow:0 0 6px #8CC63F;"></div>
-              </div>
-            </div>
-            <div class="absolute bottom-[78.12%] contents left-[9.6%] right-1/2 top-[18.67%]" data-node-id="3:375">
-              <div class="absolute inset-[19.5%_54.73%_79.69%_25.37%]" data-node-id="3:384">
-                <div class="absolute inset-[0_-0.5%]">
-                  <img id="lineLeft" alt="" class="block max-w-none size-full" src="imgPath417.svg" />
-                </div>
-              </div>
-            </div>
-            <div class="absolute bottom-[78.12%] contents left-1/2 right-[9.6%] top-[19.07%]" data-node-id="3:385">
-              <div class="absolute inset-[19.5%_22.34%_79.69%_54.69%]" data-node-id="3:387">
-                <div class="absolute inset-[0_-0.44%]">
-                  <img id="lineRight" alt="" class="block max-w-none size-full" src="imgGroup525.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="absolute contents inset-[19.01%_54.11%_80.36%_26.69%] cursor-pointer" data-node-id="3:410" onmouseenter="hoverPanel('stream',true)" onmouseleave="hoverPanel('stream',false)">
-            <div
-              class="[word-break:break-word] absolute contents inset-[19.01%_54.11%_80.36%_26.69%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:413"
-            >
-              <p class="absolute inset-[19.01%_55.91%_80.72%_26.69%]" data-node-id="3:411">Wciśnij, żeby skorzystać </p>
-              <p class="absolute inset-[19.37%_54.11%_80.36%_26.69%]" data-node-id="3:412">
-                ze słuchawki prysznicowej.
-              </p>
-            </div>
-          </div>
-          <div class="absolute contents inset-[19.01%_20.51%_80.36%_54.69%] cursor-pointer" data-node-id="3:414" onmouseenter="hoverPanel('pressure',true)" onmouseleave="hoverPanel('pressure',false)">
-            <div
-              class="[word-break:break-word] absolute contents inset-[19.01%_20.51%_80.36%_54.69%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:417"
-            >
-              <p class="absolute inset-[19.01%_20.51%_80.72%_54.69%]" data-node-id="3:415">Wciśnij, żeby skorzystać z jednego </p>
-              <p class="absolute inset-[19.37%_25.51%_80.36%_54.69%]" data-node-id="3:416">
-                z 2 strumieni deszczownicy.
-              </p>
-            </div>
-          </div>
-          <div class="absolute contents inset-[93.14%_37.85%_5.45%_37.85%]" data-node-id="3:418">
-            <div class="absolute inset-[93.14%_37.85%_5.45%_49.88%] bg-[#0F2B4B]" data-node-id="3:419"></div>
-            <div class="absolute inset-[93.14%_37.85%_5.45%_49.88%] border border-white" data-node-id="3:420"></div>
-            <div class="absolute contents inset-[93.14%_37.85%_5.45%_37.85%]" data-node-id="3:421">
-              <div class="absolute contents inset-[93.14%_37.85%_5.45%_37.85%]" data-node-id="3:427">
-                <div class="absolute inset-[93.5%_39.38%_5.85%_37.85%]" data-node-id="3:422">
-                  <img alt="GROHE" class="absolute block inset-0 max-w-none size-full object-contain" src="imgGroup499.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="absolute inset-[29.69%_9.6%_63.48%_9.6%]" data-node-id="3:428">
-            <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="455" src="imgGroheV.png" width="808" />
-          </div>
-          <div id="col-comfort" class="absolute contents inset-[73%_62.1%_16.32%_21.3%]" data-node-id="3:429">
-            <div class="absolute inset-[73%_62.1%_16.32%_21.3%]" style="cursor:pointer; z-index:1;" onmouseenter="highlightColumn('comfort')" onmouseleave="highlightColumn(null)"></div>
-            <p class="[word-break:break-word] absolute inset-[73%_66.4%_26.72%_25.6%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:430">
-              KOMFORT
-            </p>
-            <p class="[word-break:break-word] absolute inset-[75.65%_65.9%_24.08%_25.1%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:431">
-              DreamSpray
-            </p>
-            <div class="[word-break:break-word] absolute contents inset-[76.01%_62.1%_23.42%_21.3%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:434">
-              <p class="absolute inset-[76.01%_62.1%_23.72%_21.3%]" data-node-id="3:432">Równomierne ciśnienie </p>
-              <p class="absolute inset-[76.31%_62.9%_23.42%_22.1%]" data-node-id="3:433">
-                wody w każdej dyszy
-              </p>
-            </div>
-            <div
-              class="[word-break:break-word] absolute contents inset-[79.56%_67%_19.87%_26.2%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:437"
-            >
-              <p class="absolute inset-[79.56%_67%_20.17%_26.2%]" data-node-id="3:435">Intuicyjna </p>
-              <p class="absolute inset-[79.86%_67.52%_19.87%_26.78%]" data-node-id="3:436">
-                obsługa
-              </p>
-            </div>
-            <div
-              class="[word-break:break-word] absolute contents inset-[83.11%_65.7%_16.32%_24.8%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap"
-              data-node-id="3:440"
-            >
-              <p class="absolute inset-[83.11%_65.7%_16.62%_24.8%]" data-node-id="3:438">Wąż odporny </p>
-              <p class="absolute inset-[83.41%_65.92%_16.32%_24.98%]" data-node-id="3:439">
-                na skręcanie
-              </p>
-            </div>
-            <p class="[word-break:break-word] absolute inset-[79.2%_65.7%_20.53%_24.8%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:441">
-              SmartControl
-            </p>
-            <p class="[word-break:break-word] absolute inset-[82.74%_66.9%_16.98%_26.1%] leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" data-node-id="3:442">
-              TwistStop
-            </p>
-            <div class="absolute contents inset-[77.09%_64%_20.98%_23.2%]" data-node-id="3:447">
-              <div class="absolute" style="left:222px; width:134px; top:77.05%; height:134px;" data-node-id="3:444">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="134" src="imgZzhAiSmartcontrol4C00001.png" width="134" />
-              </div>
-            </div>
-            <div class="absolute contents inset-[80.64%_64%_17.44%_23.2%]" data-node-id="3:452">
-              <div class="absolute" style="left:222px; width:134px; top:80.6%; height:134px;" data-node-id="3:449">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="134" src="imgZzhFbTwiststop4C00101.png" width="134" />
-              </div>
-            </div>
-            <div class="absolute contents inset-[73.55%_64%_24.53%_23.2%]" data-node-id="3:457">
-              <div class="absolute" style="left:222px; width:134px; top:73.5%; height:134px;" data-node-id="3:454">
-                <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="134" src="imgZzhAiDreamspray4C00001.png" width="134" />
-              </div>
-            </div>
-          </div>
-          <p class="[word-break:break-word] absolute inset-[84.44%_36.88%_15.21%_36.92%] leading-[normal] not-italic text-[20px] text-white whitespace-nowrap" data-node-id="3:458">
-            WEJDŹ DO ŚWIATA GROHE
-          </p>
-          <div class="absolute inset-[85.07%_9.6%_8.1%_9.6%]" data-node-id="3:459">
-            <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="455" src="imgFilaryGroheZdjecie.png" width="808" />
-          </div>
-          <div class="absolute overflow-hidden" style="left:96px; top:3154px; width:808px; height:449px;" data-node-id="3:464">
-            <div class="absolute" style="left:0px; top:-45px; width:807px; height:539px;" data-node-id="3:461">
-              <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="539" src="imgGrafikaPodBezpieczenstwo1.png" width="807" />
-            </div>
-          </div>
-          <div class="absolute overflow-hidden" style="left:96px; top:4250px; width:808px; height:453px;" data-node-id="3:469">
-            <div class="absolute" style="left:0px; top:0px; width:808px; height:542px;" data-node-id="3:466">
-              <img alt="" class="absolute block inset-0 max-w-none size-full object-cover" height="542" src="img26507001.png" width="808" />
-            </div>
-          </div>
-          <div class="absolute contents" data-node-id="3:472">
-            <p class="absolute leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" style="left:9.6%; width:20.2%; top:91.01%; text-align:center;" data-node-id="3:473">
-              JAKOŚĆ
-            </p>
-          </div>
-          <div class="absolute contents" data-node-id="3:470">
-            <p class="absolute leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" style="left:29.8%; width:20.2%; top:91.01%; text-align:center;" data-node-id="3:471">
-              TECHNOLOGIA
-            </p>
-          </div>
-          <div class="absolute contents" data-node-id="3:474">
-            <p class="absolute leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" style="left:50%; width:20.2%; top:91.01%; text-align:center;" data-node-id="3:475">
-              DESIGN
-            </p>
-          </div>
-          <div class="absolute contents" data-node-id="3:476">
-            <div class="absolute leading-[normal] not-italic text-[16px] text-white whitespace-nowrap" style="left:70.2%; width:20.2%; top:91.01%; text-align:center;" data-node-id="3:479">
-              <p data-node-id="3:477">ZRÓWNOWAŻONY</p>
-              <p data-node-id="3:478">ROZWÓJ</p>
-            </div>
+          <div class="gc-safety-features">
+            <label class="gc-safety-feature gc-safety-feature--turbostat" for="gc-safety-turbostat">
+              <span class="gc-safety-icon"><img src="img/icon-turbostat.png" alt=""></span>
+              <span class="gc-safety-text">
+                <p class="gc-safety-title">Głowica GROHE TurboStat</p>
+                <p class="gc-safety-desc">utrzymuje wybraną temperaturę<br>wody, niezależnie od skoków<br>ciśnienia w instalacji.</p>
+              </span>
+            </label>
+            <label class="gc-safety-feature gc-safety-feature--safestop" for="gc-safety-safestop">
+              <span class="gc-safety-icon"><img src="img/icon-safestop.png" alt=""></span>
+              <span class="gc-safety-text">
+                <p class="gc-safety-title">Blokada GROHE SafeStop</p>
+                <p class="gc-safety-desc">zapobiega przypadkowemu<br>włączeniu zbyt gorącej wody,<br>chroniąc Twoją skórę.</p>
+              </span>
+            </label>
+            <label class="gc-safety-feature gc-safety-feature--cooltouch" for="gc-safety-cooltouch">
+              <span class="gc-safety-icon"><img src="img/icon-cooltouch.png" alt=""></span>
+              <span class="gc-safety-text">
+                <p class="gc-safety-title">Technologia GROHE CoolTouch</p>
+                <p class="gc-safety-desc">sprawia, że powierzchnia baterii<br>nie nagrzewa się i jest<br>bezpieczna w dotyku.</p>
+              </span>
+            </label>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="gc-banner-c-section">
+      <div class="gc-banner-c">
+        <img src="img/grohe-lifestyle-banner-2.png" alt="GROHE - wnętrze łazienki z systemem prysznicowym">
+      </div>
+    </div>
+
+    <div class="gc-tech-section">
+      <div class="gc-tech-content">
+        <p class="gc-tech-eyebrow">System Euphoria SmartControl 310 Duo</p>
+        <h3 class="gc-tech-headline">Poznaj innowacyjne rozwiązania</h3>
+        <div class="gc-tech-columns">
+
+          <div class="gc-tech-column">
+            <p class="gc-tech-column-title">Komfort</p>
+            <div class="gc-tech-feature">
+              <div class="gc-tech-icon"><img src="img/icon-dreamspray.png" alt="DreamSpray"></div>
+              <p class="gc-tech-feature-name">DreamSpray</p>
+              <p class="gc-tech-feature-desc">Równomierne ciśnienie<br>wody w każdej dyszy</p>
+            </div>
+            <div class="gc-tech-feature">
+              <div class="gc-tech-icon"><img src="img/icon-smartcontrol.png" alt="SmartControl"></div>
+              <p class="gc-tech-feature-name">SmartControl</p>
+              <p class="gc-tech-feature-desc">Intuicyjna<br>obsługa</p>
+            </div>
+            <div class="gc-tech-feature">
+              <div class="gc-tech-icon"><img src="img/icon-twiststop.png" alt="TwistStop"></div>
+              <p class="gc-tech-feature-name">TwistStop</p>
+              <p class="gc-tech-feature-desc">Wąż odporny<br>na skręcanie</p>
+            </div>
+          </div>
+
+          <div class="gc-tech-column">
+            <p class="gc-tech-column-title">Bezpieczeństwo</p>
+            <div class="gc-tech-feature">
+              <div class="gc-tech-icon"><img src="img/icon-turbostat.png" alt="TurboStat"></div>
+              <p class="gc-tech-feature-name">TurboStat</p>
+              <p class="gc-tech-feature-desc">Zawsze idealna<br>temperatura wody</p>
+            </div>
+            <div class="gc-tech-feature">
+              <div class="gc-tech-icon"><img src="img/icon-safestop.png" alt="SafeStop"></div>
+              <p class="gc-tech-feature-name">SafeStop</p>
+              <p class="gc-tech-feature-desc">Blokada bezpieczeństwa<br>na uchwycie</p>
+            </div>
+            <div class="gc-tech-feature">
+              <div class="gc-tech-icon"><img src="img/icon-cooltouch.png" alt="CoolTouch"></div>
+              <p class="gc-tech-feature-name">CoolTouch</p>
+              <p class="gc-tech-feature-desc">Nienagrzewający się<br>korpus</p>
+            </div>
+          </div>
+
+          <div class="gc-tech-column">
+            <p class="gc-tech-column-title">Jakość</p>
+            <div class="gc-tech-feature">
+              <div class="gc-tech-icon"><img src="img/icon-longlife-finish.png" alt="Long-life finish"></div>
+              <p class="gc-tech-feature-name">Long-life finish</p>
+              <p class="gc-tech-feature-desc">Trwała, łatwa<br>w czyszczeniu powłoka</p>
+            </div>
+            <div class="gc-tech-feature">
+              <div class="gc-tech-icon"><img src="img/icon-speedclean.png" alt="SpeedClean"></div>
+              <p class="gc-tech-feature-name">SpeedClean</p>
+              <p class="gc-tech-feature-desc">Łatwe usuwanie kamienia<br>z dysz natrysku</p>
+            </div>
+            <div class="gc-tech-feature">
+              <div class="gc-tech-icon"><img src="img/icon-gwarancja.png" alt="Gwarancja"></div>
+              <p class="gc-tech-feature-name">Gwarancja</p>
+              <p class="gc-tech-feature-desc">5 lat gwarancji<br>producenta</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="gc-footer-section">
+      <div class="gc-footer-content">
+        <h3 class="gc-footer-headline">Wejdź do świata GROHE</h3>
+        <div class="gc-footer-image">
+          <img src="img/grohe-footer-banner.png" alt="GROHE - świat produktów">
+          <div class="gc-footer-features">
+            <p class="gc-footer-feature">Jakość</p>
+            <p class="gc-footer-feature">Technologia</p>
+            <p class="gc-footer-feature">Design</p>
+            <p class="gc-footer-feature">Zrównoważony rozwój</p>
+          </div>
+        </div>
+        <img class="gc-footer-logo" src="img/logo-grohe.svg" alt="GROHE - Pure Freude an Wasser">
+      </div>
+    </div>
+
   </div>
 </div>
-<script>
-function resizeStage(){
-  var outer = document.getElementById('stageOuter');
-  var stage = document.getElementById('stage');
-  var w = outer.clientWidth;
-  var scale = Math.min(1, w/1000);
-  stage.style.transform = 'scale(' + scale + ')';
-  stage.style.left = '50%';
-  stage.style.marginLeft = (-500*scale) + 'px';
-  outer.style.height = (6653*scale) + 'px';
-}
-window.addEventListener('resize', resizeStage);
-window.addEventListener('load', resizeStage);
-resizeStage();
-
-var currentPanelState = 'temp';
-function showPanelState(state){
-  currentPanelState = state;
-  ['temp','stream','pressure'].forEach(function(s){
-    document.getElementById('panel-'+s).classList.toggle('hidden', s !== state);
-    document.getElementById('caption-'+s).classList.toggle('hidden', s !== state);
-    document.getElementById('pillBg-'+s).style.backgroundColor = (s === state) ? 'rgba(255,255,255,0.12)' : 'transparent';
-  });
-}
-showPanelState('temp');
-
-function hoverPill(id, on){
-  if (id === currentPanelState) return;
-  document.getElementById('pillBg-'+id).style.backgroundColor = on ? 'rgba(255,255,255,0.06)' : 'transparent';
-}
-
-function highlightDetail(n){
-  for (var i = 1; i <= 5; i++){
-    var item = document.getElementById('detail-item-' + i);
-    var badge = document.getElementById('detail-badge-' + i);
-    var texts = item.querySelectorAll('p');
-    var op = (i === n) ? '1' : '0.4';
-    for (var j = 0; j < texts.length; j++){ texts[j].style.opacity = op; }
-    if (i === n){
-      badge.style.backgroundColor = '#4ABFF1';
-      badge.style.boxShadow = '0 0 0 3px rgba(74,191,241,0.4)';
-    } else {
-      badge.style.backgroundColor = '#748AA3';
-      badge.style.boxShadow = 'none';
-    }
-  }
-}
-
-var safetyPhotos = {cool: 'imgTechnologia.jpg', turbo: 'imgGlowica.jpg', safe: 'imgBlokada.jpg'};
-function highlightSafety(name){
-  var names = ['cool','turbo','safe'];
-  document.getElementById('safety-photo').src = safetyPhotos[name];
-  for (var i = 0; i < names.length; i++){
-    var n = names[i];
-    var item = document.getElementById('safety-item-' + n);
-    var badge = document.getElementById('safety-badge-' + n);
-    var texts = item.querySelectorAll('p');
-    var op = (n === name) ? '1' : '0.4';
-    for (var j = 0; j < texts.length; j++){ texts[j].style.opacity = op; }
-    badge.style.opacity = op;
-  }
-}
-
-function highlightColumn(name){
-  var cols = ['comfort','safety','quality'];
-  for (var i = 0; i < cols.length; i++){
-    var c = cols[i];
-    var col = document.getElementById('col-' + c);
-    var op = (name === null || c === name) ? '1' : '0.35';
-    var targets = col.querySelectorAll('p, img');
-    for (var j = 0; j < targets.length; j++){
-      targets[j].style.transition = 'opacity 0.2s';
-      targets[j].style.opacity = op;
-    }
-  }
-}
-
-function hoverPanel(which, on){
-  var lineLeft = document.getElementById('lineLeft');
-  var lineRight = document.getElementById('lineRight');
-  if (which === 'stream'){
-    lineLeft.src = on ? 'imgPath417Green.svg' : 'imgPath417.svg';
-    document.getElementById('ring-stream').style.opacity = on ? '1' : '0';
-  } else {
-    lineRight.src = on ? 'imgGroup525Green.svg' : 'imgGroup525.svg';
-    document.getElementById('ring-pressure1').style.opacity = on ? '1' : '0';
-    document.getElementById('ring-pressure2').style.opacity = on ? '1' : '0';
-  }
-}
-
-function setShowerMode(mode){
-  var isHand = mode === 'hand';
-  document.getElementById('mode-rain').classList.toggle('hidden', isHand);
-  document.getElementById('mode-hand').classList.toggle('hidden', !isHand);
-  document.getElementById('label-rain').style.color = isHand ? '#6c7681' : '#ffffff';
-  document.getElementById('label-hand').style.color = isHand ? '#ffffff' : '#6c7681';
-  document.getElementById('toggle-knob').style.transform = isHand ? 'translateX(27px)' : 'translateX(0)';
-}
-</script>
-</body>
-</html>
